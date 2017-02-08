@@ -1,0 +1,212 @@
+@mixin sprite-arrow {
+    width: 27px;
+    height: 59px;
+    background-position: -1px -1px;
+}
+
+@mixin search-btn-bg {
+    background-position: -452px -83px;
+}
+
+@mixin sprite-arrow-hover {
+    width: 27px;
+    height: 59px;
+    background-position: -30px -1px;
+}
+
+@mixin sprite-helper {
+    width: 89px;
+    height: 62px;
+    background-position: -191px -1px;
+}
+
+@mixin sprite-ico-login {
+    width: 19px;
+    height: 18px;
+    background-position: -493px -1px;
+}
+@mixin sprite-sticker1 {
+    width: 69px;
+    height: 40px;
+    background-position: -397px -109px;
+}
+
+@mixin sprite-sticker2 {
+    width: 69px;
+    height: 40px;
+    background-position: -439px -151px;
+}
+
+@mixin sprite-sticker3 {
+    width: 69px;
+    height: 40px;
+    background-position: -265px -193px;
+}
+@mixin sprite-ico-quest {
+    width: 15px;
+    height: 15px;
+    background-position: -493px -21px;
+}
+@mixin sprite-triangle {
+    width: 13px;
+    height: 12px;
+    background-position: -490px -52px;
+}
+@mixin sprite-ico-fb {
+    width: 37px;
+    height: 34px;
+    background-position: -454px -1px;
+}
+
+@mixin sprite-ico-twitter {
+    width: 34px;
+    height: 34px;
+    background-position: -454px -37px;
+}
+
+@mixin sprite-ico-vk {
+    width: 36px;
+    height: 34px;
+    background-position: -414px -73px;
+}
+@mixin sprite-link-arrow {
+    width: 19px;
+    height: 12px;
+    background-position: -490px -38px;
+}
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+}
+.all-brands-inner .sprite {
+    margin: 0 auto;
+    width: 108px !important;
+}
+.sprite-dell {
+    width: 130px;
+    height: 50px;
+    background-position: -59px -1px;
+}
+
+.sprite-ico-basket {
+    width: 38px;
+    height: 38px;
+    background-position: -282px -1px;
+}
+
+.sprite-amd {
+    width: 130px;
+    height: 50px;
+    // background-position: -1px -65px;
+    background-position: -13px -65px;
+}
+
+.sprite-apple {
+    width: 130px;
+    height: 50px;
+    // background-position: -133px -65px;
+    background-position: -145px -65px;
+}
+
+.sprite-asus {
+    width: 130px;
+    height: 50px;
+    // background-position: -1px -117px;
+    background-position: -13px -117px;
+}
+
+.sprite-att {
+    width: 130px;
+    height: 50px;
+    // background-position: -133px -117px;
+    background-position: -145px -117px;
+}
+
+.sprite-cisco {
+    width: 130px;
+    height: 50px;
+    // background-position: -1px -169px;
+    background-position: -13px -169px;
+}
+
+.sprite-ibm {
+    width: 130px;
+    height: 50px;
+    // background-position: -133px -169px;
+    background-position: -145px -169px;
+}
+
+.sprite-intel {
+    width: 130px;
+    height: 50px;
+    // background-position: -1px -221px;
+    background-position: -13px -221px;
+}
+
+.sprite-kasper {
+    width: 130px;
+    height: 50px;
+    // background-position: -133px -221px;
+    background-position: -145px -221px;
+}
+
+.sprite-lenovo {
+    width: 130px;
+    height: 50px;
+    // background-position: -1px -273px;
+    background-position: -13px -273px;
+}
+
+.sprite-microsoft {
+    width: 130px;
+    height: 50px;
+    // background-position: -133px -273px;
+    background-position: -145px -273px;
+}
+
+.sprite-nek {
+    width: 130px;
+    height: 50px;
+    // background-position: -1px -325px;
+    background-position: -13px -325px;
+}
+
+.sprite-nokia {
+    width: 130px;
+    height: 50px;
+    // background-position: -133px -325px;
+    background-position: -145px -325px;
+}
+
+.sprite-panasonic {
+    width: 130px;
+    height: 50px;
+    // background-position: -322px -1px;
+    background-position: -334px -1px;
+}
+
+.sprite-samsung {
+    width: 130px;
+    height: 50px;
+    // background-position: -282px -53px;
+    background-position: -294px -53px;
+}
+
+.sprite-toshiba {
+    width: 130px;
+    height: 50px;
+    // background-position: -265px -105px;
+    background-position: -277px -105px;
+}
+
+.sprite-logo-owox {
+    width: 172px;
+    height: 30px;
+    background-position: -265px -157px;
+}
+
+.sprite-visamaster {
+    width: 220px;
+    height: 26px;
+    background-position: -265px -235px;
+}

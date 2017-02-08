@@ -1,0 +1,122 @@
+@mixin css3($property, $value) {
+	@if ($property == transition) {
+	     @each $prefix in -webkit-, -moz-, -o-, '' {
+			#{$prefix}#{$property}: $value;
+	     }
+	}
+	@else {
+	     @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+			#{$prefix}#{$property}: $value;
+	     }
+	}
+}
+@mixin opacity($opacity) {
+     opacity: $opacity;
+     $opacityIE: $opacity * 100;
+     filter: alpha(opacity=$opacityIE);
+}
+@mixin absPosition ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+     position: absolute;
+     top: $top;
+     right: $right;
+     bottom: $bottom;
+     left: $left;
+}
+@mixin fontsize($size: 24, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1em;
+}
+@mixin clearfix {
+	&:after {
+		content: "";
+	    display: table;
+	    clear: both;
+	}
+}
+
+@mixin vendor-prefixes($rule, $value, $prefixes...) {
+  @each $prefix in append($prefixes, '') {
+    @if $prefix != '' {
+      $prefix: '-#{$prefix}-';
+    }
+
+    #{$prefix}#{$rule}: unquote($value);
+  }
+}
+
+@mixin user-select($value: none) {
+  @include vendor-prefixes(user-select, $value, webkit, moz, ms);
+}
+
+@mixin box-sizing($value: border-box) {
+  @include vendor-prefixes(box-sizing, $value, webkit, moz);
+}
+
+@mixin box-shadow($value) {
+  @include vendor-prefixes(box-shadow, $value, webkit, moz);
+}
+
+@mixin inline-block($align: top) {
+  display: inline-block;
+  vertical-align: $align;
+}
+
+@mixin font($size, $line-height: false, $weight: false) {
+  font-size: $size;
+
+  // Try to get a value from "font-weights" map.
+  $possible-weight: font-weight($line-height);
+
+  @if $possible-weight == null {
+    // Check for one of defaults value.
+    $defaults: bold, bolder, lighter, normal;
+    $index: index($defaults, $line-height);
+
+    @if $index != null {
+      $possible-weight: nth($defaults, $index);
+    }
+  }
+
+  @if $possible-weight != null {
+    $line-height: false;
+    font-weight: $possible-weight;
+  }
+  @elseif $weight != false {
+    $value: font-weight($weight);
+
+    @if $value == null {
+      $value: $weight;
+    }
+
+    font-weight: $value;
+  }
+
+  @if $line-height != false {
+    line-height: $line-height;
+  }
+}
+
+@mixin breakpoint($map) {
+  $directions: (from: min, to: max);
+  $query: '';
+
+  @each $direction, $breakpoint in $map {
+    @if map_has_key($directions, $direction) {
+      @if $query != '' {
+        $query: $query + ') and (';
+      }
+
+      @if variable-exists(breakpoints) and map_has_key($breakpoints, $breakpoint) {
+        $breakpoint: map_get($breakpoints, $breakpoint);
+      }
+
+      $query: $query + map_get($directions, $direction) + '-width: ' + $breakpoint;
+    }
+  }
+
+  @if $query != '' {
+    @media #{'(' + $query + ')'} {
+      @content;
+    }
+  }
+}
