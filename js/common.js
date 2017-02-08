@@ -44,6 +44,7 @@
         i = i + 3;
       }
       setInterval("draw()", 50);
-$(document).ready(function(){
+      
+// $(document).ready(function(){
 
-})
+// })
