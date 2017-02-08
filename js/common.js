@@ -43,7 +43,7 @@
 
         i = i + 3;
       }
-      setInterval("draw()", 20);
+      setInterval("draw()", 50);
 $(document).ready(function(){
 
 })
