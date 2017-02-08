@@ -862,7 +862,8 @@ body {
     font-size: 40px;
     font-size: 2.5em;
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
 
 .item {
   z-index: 5;
@@ -870,7 +871,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  margin: 50px auto 10px auto; }
+  margin: 20px auto 10px auto; }
   .item .date {
     font-size: 20px;
     font-size: 1.25em;
@@ -885,34 +886,26 @@ body {
 
 @-webkit-keyframes flash {
   0% {
-    border-color: #65b6dc; }
-  25% {
-    border-color: #5eb8d1; }
+    border-color: rgba(39, 84, 139, 0.4); }
   50% {
-    border-color: #c3eaf2; }
-  75% {
-    border-color: #5eb8d1; }
+    border-color: rgba(39, 84, 139, 0.9); }
   100% {
-    border-color: #65b6dc; } }
+    border-color: rgba(39, 84, 139, 0.4); } }
 
 @keyframes flash {
   0% {
-    border-color: #65b6dc; }
-  25% {
-    border-color: #5eb8d1; }
+    border-color: rgba(39, 84, 139, 0.4); }
   50% {
-    border-color: #c3eaf2; }
-  75% {
-    border-color: #5eb8d1; }
+    border-color: rgba(39, 84, 139, 0.9); }
   100% {
-    border-color: #65b6dc; } }
+    border-color: rgba(39, 84, 139, 0.4); } }
 
 .thumb-box {
   width: 200px;
   height: 200px;
   background: #fff;
   position: relative;
-  margin: 50px auto 80px auto;
+  margin: 30px auto;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: #fff;
@@ -939,8 +932,8 @@ body {
   .thumb-box.thumb8 {
     background-image: url("../img/oxis-thumb.png"); }
   .thumb-box:hover:before {
-    -webkit-animation: flash 3s infinite;
-            animation: flash 3s infinite; }
+    -webkit-animation: flash 1.5s infinite;
+            animation: flash 1.5s infinite; }
   .thumb-box:before, .thumb-box .project-link {
     position: absolute;
     top: -15px;
@@ -949,15 +942,14 @@ body {
     left: -15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     width: 230px;
-    height: 230px;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg); }
+    height: 230px; }
   .thumb-box:before {
     content: '';
     overflow: hidden;
     display: block;
-    border: 3px solid #007c9a; }
+    border: 15px solid rgba(39, 84, 139, 0.3); }
   .thumb-box .project-link {
     outline: none; }
