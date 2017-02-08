@@ -837,6 +837,7 @@ body {
   z-index: 1; }
   body:after {
     content: '';
+    z-index: -1;
     position: fixed;
     top: 0;
     width: 100%;
@@ -857,6 +858,11 @@ body {
 
 .portfolio {
   padding: 30px 0; }
+  .portfolio .author {
+    font-size: 40px;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center; }
 
 .item {
   z-index: 5;
@@ -865,6 +871,17 @@ body {
           box-sizing: border-box;
   text-align: center;
   margin: 50px auto; }
+  .item .date {
+    font-size: 20px;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  .item .desc {
+    font-size: 22px;
+    font-size: 1.375em;
+    line-height: 35px;
+    text-decoration: underline; }
 
 @-webkit-keyframes flash {
   0% {
@@ -872,9 +889,9 @@ body {
   25% {
     border-color: #5eb8d1; }
   50% {
-    border-color: #a7c9df; }
+    border-color: #c3eaf2; }
   75% {
-    border-color: #007c9a; }
+    border-color: #5eb8d1; }
   100% {
     border-color: #65b6dc; } }
 
@@ -884,9 +901,9 @@ body {
   25% {
     border-color: #5eb8d1; }
   50% {
-    border-color: #a7c9df; }
+    border-color: #c3eaf2; }
   75% {
-    border-color: #007c9a; }
+    border-color: #5eb8d1; }
   100% {
     border-color: #65b6dc; } }
 
@@ -895,19 +912,32 @@ body {
   height: 200px;
   background: #fff;
   position: relative;
-  margin: 50px auto 100px auto;
+  margin: 50px auto 80px auto;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  border: 2px solid #000;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 6; }
   .thumb-box.thumb1 {
-    background-image: url("http://behappy.in.ua/karmaom/test2/img/logo.jpg");
-    background-color: #fff; }
+    background-image: url("../img/owox-test-thumb.jpg"); }
   .thumb-box.thumb2 {
-    background-image: url("../img/ia-tumb.jpg");
-    background-color: #424234; }
+    background-image: url("../img/ia-thumb.png");
+    background-color: #434545; }
+  .thumb-box.thumb3 {
+    background-image: url("../img/bh-thumb.png");
+    background-color: #f1efe5; }
+  .thumb-box.thumb4 {
+    background-image: url("../img/bino-thumb.png");
+    background-color: #3a3b40; }
+  .thumb-box.thumb5 {
+    background-image: url("../img/giraffe-thumb.png"); }
+  .thumb-box.thumb6 {
+    background-image: url("../img/new-oxis-thumb.png"); }
+  .thumb-box.thumb7 {
+    background-image: url("../img/emm-thumb.png"); }
+  .thumb-box.thumb8 {
+    background-image: url("../img/oxis-thumb.png"); }
   .thumb-box:hover:before {
     -webkit-animation: flash 3s infinite;
             animation: flash 3s infinite; }
@@ -928,4 +958,6 @@ body {
     content: '';
     overflow: hidden;
     display: block;
-    border: 2px solid #007c9a; }
+    border: 3px solid #007c9a; }
+  .thumb-box .project-link {
+    outline: none; }
