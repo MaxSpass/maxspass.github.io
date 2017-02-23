@@ -115,9 +115,12 @@ $('.gallery-nav li').on('click',function(){
 
 $(window).on('load resize', function () {
 	var galHeight = $('.gallery-item').width(),
-		caseHeight = $('#case_study').height();
+		caseHeight = $('#case_study').height(),
+		articleImgHeight = $('#blog .article .blog-img').height();
 
 	$('.gallery').css('min-height', galHeight)
+
+	$('#blog .article').height(articleImgHeight + 'px')
 	// $('.study-box').css('height', caseHeight)
 	// $('.case-img-box').css('max-height', caseHeight)
 })
