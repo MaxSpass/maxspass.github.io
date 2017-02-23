@@ -2052,6 +2052,7 @@ section.blog-box {
 
 .article {
   height: 460px;
+  overflow: hidden;
   background-color: #e74c3c;
   padding-left: 0;
   padding-right: 0;
@@ -2085,9 +2086,9 @@ section.blog-box {
         position: absolute;
         top: auto;
         right: 0;
-        bottom: -2px;
+        bottom: -10px;
         left: 0;
-        height: 2px;
+        height: 10px;
         width: 100%;
         background: #f4f5f9; }
       .article .blog-img {
