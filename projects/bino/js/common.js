@@ -120,7 +120,10 @@ $(window).on('load resize', function () {
 
 	$('.gallery').css('min-height', galHeight)
 
-	$('#blog .article').height(articleImgHeight + 'px')
+	// if ($(window).width() >= 768) {
+		$('#blog .article').height(articleImgHeight)
+	// }
+	
 	// $('.study-box').css('height', caseHeight)
 	// $('.case-img-box').css('max-height', caseHeight)
 })
