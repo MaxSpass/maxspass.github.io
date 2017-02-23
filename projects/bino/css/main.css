@@ -2075,18 +2075,21 @@ section.blog-box {
       float: left; } }
   @media screen and (max-width: 991px) {
     .article {
-      position: relative; }
+      position: relative;
+      margin-bottom: 8px; }
+      .article:last-child {
+        margin-bottom: 0; }
       .article:after {
         content: '';
         display: block;
         position: absolute;
         top: auto;
         right: 0;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
-        height: 4px;
+        height: 2px;
         width: 100%;
-        background: #fff; }
+        background: #f4f5f9; }
       .article .blog-img {
         float: left; }
       .article .blog-desc {

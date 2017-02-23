@@ -119,11 +119,12 @@ $(window).on('load resize', function () {
 		articleImgHeight = $('#blog .article .blog-img').height();
 
 	$('.gallery').css('min-height', galHeight)
+	$('#blog .article').height(articleImgHeight)
 
-	// if ($(window).width() >= 768) {
-		$('#blog .article').height(articleImgHeight)
-	// }
-	
+	if ($(window).width() >= 768) {
+		$('body').removeClass('shadow')
+	}
+
 	// $('.study-box').css('height', caseHeight)
 	// $('.case-img-box').css('max-height', caseHeight)
 })
