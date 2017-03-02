@@ -1229,7 +1229,10 @@ header {
         margin-right: -500px; }
   .show {
     display: block;
-    z-index: 999; }
+    overflow-y: scroll;
+    height: 100%;
+    z-index: 999;
+    top: 30px; }
     .show ul li {
       opacity: 1; }
       .show ul li:nth-child(odd) {
@@ -2208,6 +2211,9 @@ section.blog-box {
       font-size: 15px; } }
 
 @media screen and (max-width: 767px) {
+  .banner-top {
+    min-height: auto;
+    height: 630px; }
   .article .blog-desc {
     overflow-y: scroll;
     height: 100%; }

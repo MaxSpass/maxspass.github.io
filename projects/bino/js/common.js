@@ -1,9 +1,11 @@
 $(document).ready(function(){
-
-
 	$('.mobile-btn, .menu ul a').on('click',function(){
+		// var navMobile = $('nav.show');
+		// var navMobileHeight = navMobile.height();
 		if ($(window).width() <= 767)
 		{
+	// navMobile.css('height', '100%')
+// console.log(navMobileHeight)
 			$('.menu').toggleClass('show')
 			$('body').toggleClass('shadow')
 		}
@@ -17,8 +19,8 @@ $(document).ready(function(){
 		navigation: true,
 		slideSpeed: 2500,
 		rewindSpeed: 2500,
-		stopOnHover: true,
 		pagination: false,
+		// stopOnHover: true,
 		// paginationSpeed: 5000,
 		navigationText: ['<i class="arrow-left" data-icon="b"></i>', '<i class="arrow-right" data-icon="c"></i>'],
 	})
@@ -122,7 +124,8 @@ $(window).on('load resize', function () {
 	$('#blog .article').height(articleImgHeight)
 
 	if ($(window).width() >= 768) {
-		$('body').removeClass('shadow')
+		$('body').removeClass('shadow');
+		$('.menu').removeClass('show');
 	}
 
 	// $('.study-box').css('height', caseHeight)
