@@ -1230,7 +1230,7 @@ header {
   .show {
     display: block;
     overflow-y: scroll;
-    height: 100%;
+    height: 80%;
     z-index: 999;
     top: 30px; }
     .show ul li {
