@@ -1,3 +1,28 @@
+$(document).ready(function(){
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  $('.item').each(function(){
+    $(this).css({
+      'height': getRandomInt(250,777)
+    })
+  })
+
+
+
+
+$('#projects-list').masonry({
+  // options
+  itemSelector: '.item',
+  gutter: 20,
+  fitWidth: true,
+  columnWidth: 300
+});
+
+
+})
+
 function first() {
         var canvas = document.getElementById('canvas');
       var ctx = canvas.getContext('2d');

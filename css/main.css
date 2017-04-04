@@ -831,7 +831,7 @@ textarea {
     display: none !important; } }
 
 body {
-  background: #FFFAFA; }
+  background: #000; }
 
 #canvas {
   z-index: 2;
@@ -843,32 +843,112 @@ body {
   .portfolio .author {
     font-size: 40px;
     font-size: 2.5em;
-    color: #27548b;
+    color: #fff;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.45);
     text-align: center;
     margin-bottom: 10px; }
     .portfolio .author.email {
+      margin: 0 auto 10px auto;
+      display: table;
       font-size: 25px;
       font-size: 1.5625em; }
 
+.author-box {
+  margin-bottom: 50px; }
+
+.projects-list {
+  margin: 0 auto; }
+
 .item {
   z-index: 5;
-  color: #000;
+  color: rgba(255, 255, 255, 0.95);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  margin: 20px auto 10px auto; }
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  margin-bottom: 20px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .item.thumb1 {
+    background-image: url("../img/owox-test-thumb.jpg"); }
+  .item.thumb2 {
+    background-image: url("../img/ia-thumb.png");
+    background-color: #46a4cf; }
+  .item.thumb3 {
+    background-image: url("../img/bh-thumb.png");
+    background-color: #c6a545; }
+  .item.thumb4 {
+    background-image: url("../img/bino-thumb.png");
+    background-color: #e74c3c; }
+  .item.thumb5 {
+    background-image: url("../img/giraffe-thumb.png"); }
+  .item.thumb6 {
+    background-image: url("../img/new-oxis-thumb.png"); }
+  .item.thumb7 {
+    background-image: url("../img/emm-thumb.png");
+    background-color: #38a9e3; }
+  .item.thumb8 {
+    background-image: url("../img/oxis-thumb.png");
+    background-color: #ee1c25; }
+  .item.thumb9 {
+    background-image: url("../img/bc-thumb.png");
+    background-color: #e74880; }
+  .item .date, .item .desc {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
   .item .date {
-    font-size: 11px;
-    font-size: 0.6875em;
+    font-size: 13px;
+    font-size: 0.8125em;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+            transform: translateY(-20px); }
   .item .desc {
-    font-size: 18px;
-    font-size: 1.125em;
+    font-size: 15px;
+    font-size: 0.9375em;
     line-height: 29px;
-    text-decoration: underline; }
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px); }
+  .item .project-link {
+    outline: none;
+    position: absolute;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 2; }
+  .item:hover {
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
+    .item:hover .desc-box {
+      opacity: 1;
+      z-index: 7;
+      display: block; }
+      .item:hover .desc-box .date, .item:hover .desc-box .desc {
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0); }
+    .item:hover .project-link {
+      background-color: rgba(0, 0, 0, 0.8); }
+
+.link-to-project {
+  color: #000;
+  font-size: 17px;
+  padding: 5px 20px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
 
 @-webkit-keyframes flash {
   0% {
@@ -886,56 +966,13 @@ body {
   100% {
     border-color: rgba(39, 84, 139, 0.9); } }
 
-.thumb-box {
-  width: 200px;
-  height: 200px;
-  background: #fff;
+.desc-box {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
-  margin: 30px auto;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 6; }
-  .thumb-box.thumb1 {
-    background-image: url("../img/owox-test-thumb.jpg"); }
-  .thumb-box.thumb2 {
-    background-image: url("../img/ia-thumb.png");
-    background-color: #434545; }
-  .thumb-box.thumb3 {
-    background-image: url("../img/bh-thumb.png");
-    background-color: #f1efe5; }
-  .thumb-box.thumb4 {
-    background-image: url("../img/bino-thumb.png");
-    background-color: #3a3b40; }
-  .thumb-box.thumb5 {
-    background-image: url("../img/giraffe-thumb.png"); }
-  .thumb-box.thumb6 {
-    background-image: url("../img/new-oxis-thumb.png"); }
-  .thumb-box.thumb7 {
-    background-image: url("../img/emm-thumb.png"); }
-  .thumb-box.thumb8 {
-    background-image: url("../img/oxis-thumb.png"); }
-  .thumb-box:hover:before {
-    -webkit-animation: flash 1.5s infinite;
-            animation: flash 1.5s infinite; }
-  .thumb-box:before, .thumb-box .project-link {
-    position: absolute;
-    top: -15px;
-    right: auto;
-    bottom: auto;
-    left: -15px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    width: 230px;
-    height: 230px; }
-  .thumb-box:before {
-    content: '';
-    overflow: hidden;
-    display: block;
-    border: 16px solid #27548b; }
-  .thumb-box .project-link {
-    outline: none; }
+  margin: 30px auto; }
