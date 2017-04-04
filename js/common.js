@@ -1,14 +1,9 @@
-      var canvas = document.getElementById('canvas');
+function first() {
+        var canvas = document.getElementById('canvas');
       var ctx = canvas.getContext('2d');
 
       canvas.width = window.innerWidth;
-      // canvas.height = window.innerHeight;
       canvas.height = '200';
-
-      // var waves = ["rgba(157, 187, 210, 0.3)",
-      //              "rgba(171, 216, 201, 0.3)",
-      //              "rgba(135, 199, 215, 0.3)",
-      //              "rgba(223, 233, 235, 0.3)"]
 
       var waves = ["rgba(25, 63, 123, 0.35)",
                    "rgba(25, 63, 123, 0.45)",
@@ -31,7 +26,6 @@
           ctx.beginPath();
           ctx.moveTo(0, randomLeft + 100);
 
-          // ctx.lineTo(canvas.width, randomRight + 100);
           ctx.bezierCurveTo(canvas.width / 3, randomLeftConstraint, canvas.width / 3 * 2, randomRightConstraint, canvas.width, randomRight + 100);
           ctx.lineTo(canvas.width , canvas.height);
           ctx.lineTo(0, canvas.height);
@@ -45,6 +39,5 @@
       }
       setInterval("draw()", 50);
       
-// $(document).ready(function(){
 
-// })
+}
