@@ -9,6 +9,37 @@ $('.text-preview').append($('<img src="img/webpr.png" class="img-responsive">'))
 // }
 // else {}
 
+var stiky = function(){
+	var headerBox = $('.header-animate')
+    var navPos, winPos, navHeight;
+
+    $('<div class="clone-nav-menu"></div>').insertBefore(headerBox)
+
+    function refreshVar() {
+        navPos = headerBox.offset().top;
+        navHeight = headerBox.outerHeight(true);
+        headerHeight = headerBox.height();
+    }
+
+    refreshVar();
+    $(window).resize(refreshVar);
+
+    $(window).scroll(function() {
+        winPos = $(window).scrollTop();
+        $('.clone-nav-menu').css('height',headerBox.height())
+        if (winPos > navPos && $(window).width() > 768) {
+            headerBox.addClass('fixed');
+            $('.clone-nav-menu').show();
+        } else {
+            headerBox.removeClass('fixed');
+            $('.clone-nav-menu').hide();
+
+        }
+    });
+
+}();
+
+
 $('#btn-go, #btn-go-services, .btn-price').click(function(){
 	var thisVal = $(this).attr('value');
 	var thisId = $(this).attr('id');
@@ -24,6 +55,23 @@ $('#btn-go, #btn-go-services, .btn-price').click(function(){
 	newModal.find('button.btn-form').attr('form',formModalId);
 	$('.masked-input').mask('+38 (099) 999-99-99');
 
+	thisButton.click(function(){
+	    if($(this).parent('form')[0].checkValidity()) {
+	        $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
+				newModal.html('<b>Спасибо, мы скоро с Вами свяжемся</b>');
+				setTimeout(function(){
+					console.log(thisVal)
+					newModal.fadeOut(700)
+					$('body').removeClass('shadow')
+					setTimeout(function(){
+						newModal.remove()
+					},800)
+				},1000)
+	        });
+	        return false;
+	    }
+	    // else  {}
+	});
 	$('.form-close').click(function(){
 		var thisParentForm = $(this).parent('.form-box');
 		thisParentForm.fadeOut(400)
@@ -34,24 +82,24 @@ $('#btn-go, #btn-go-services, .btn-price').click(function(){
 	})
 })
 
-// $('#btn-bottom').click(function(){
-// 	var thisVal = $(this).attr('value');
-// 	var thx = $('.h4-form');
-// 	var thxText = $('.p-form');
-//     if($(this).parent('form')[0].checkValidity()) {
-//         $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
-//             $(':input').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
-// 			thx.fadeOut(300).text('Спасибо');
-// 			thxText.fadeOut(300).text('мы скоро с Вами свяжемся');
-// 			setTimeout(function(){
-// 					thx.fadeIn(350)
-// 					thxText.fadeIn(350)
-// 			},100)
-//         });
-//         return false;
-//     }
-//     // else  {}
-// });
+$('#btn-bottom').click(function(){
+	var thisVal = $(this).attr('value');
+	var thx = $('.h4-form');
+	var thxText = $('.p-form');
+    if($(this).parent('form')[0].checkValidity()) {
+        $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
+            $(':input').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
+			thx.fadeOut(300).text('Спасибо');
+			thxText.fadeOut(300).text('мы скоро с Вами свяжемся');
+			setTimeout(function(){
+					thx.fadeIn(350)
+					thxText.fadeIn(350)
+			},100)
+        });
+        return false;
+    }
+    // else  {}
+});
 
 
 $('.btn-mobile').click(function(){
@@ -109,6 +157,7 @@ $(function() {
 
 	$('.portfolio-list').owlCarousel({
 		items: 3,
+		autoplaySpeed: 200,
 		loop: true,
 		center: true,
 		autoplay: true,
@@ -135,6 +184,7 @@ $(window).on('load resize', function(){
 		$('nav.menu li a').click(function(){
 		removeMobileLayout()
 		})
+		$('.header-animate').removeClass('fixed')
 
 	} else {
 		removeMobileLayout()

@@ -259,7 +259,9 @@ header {
 .logo img {
   width: 100%;
   margin-top: 25px;
-  max-width: 335px; }
+  max-width: 335px;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in; }
   @media screen and (max-width: 767px) {
     .logo img {
       max-width: 200px; } }
@@ -272,6 +274,34 @@ header {
 
 .logo-box {
   position: absolute; }
+
+.header-animate {
+  z-index: 99; }
+  .header-animate.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 85%; }
+    .header-animate.fixed .logo img {
+      max-width: 120px;
+      display: table;
+      margin: 0 auto; }
+    .header-animate.fixed nav.menu {
+      margin-top: 25px;
+      margin-bottom: 20px; }
+      .header-animate.fixed nav.menu li a {
+        color: #fff; }
+        .header-animate.fixed nav.menu li a:hover {
+          border-color: #fff; }
+    .header-animate.fixed .contact-top-box {
+      margin-top: 10px; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .header-animate.fixed .contact-top-box {
+          margin-top: -60px; } }
+      .header-animate.fixed .contact-top-box .phone-top, .header-animate.fixed .contact-top-box .if-quest-is-true {
+        color: #fff; }
 
 .btn-mobile {
   position: fixed;
@@ -354,6 +384,7 @@ nav.menu li a {
     margin-top: 0;
     -webkit-transition: all .4s ease-in;
     transition: all .4s ease-in;
+    opacity: 0;
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 100%;
@@ -371,6 +402,7 @@ nav.menu li a {
         background: #262626;
         color: #fff; }
     nav.menu.show {
+      opacity: 1;
       -webkit-transform: translate(0, 0);
           -ms-transform: translate(0, 0);
               transform: translate(0, 0); } }
@@ -446,7 +478,9 @@ nav.menu li a {
 .contact-top-box {
   margin-left: 50px;
   padding: 5px 0;
-  float: right; }
+  float: right;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in; }
   @media (min-width: 768px) and (max-width: 991px) {
     .contact-top-box {
       margin-top: -50px;
@@ -551,9 +585,15 @@ nav.menu li a {
             box-sizing: border-box;
     max-width: 260px;
     margin-bottom: 30px; }
+    @media screen and (min-width: 992px) {
+      .our-services-inner .serv-item {
+        height: 185px; } }
     @media screen and (max-width: 991px) {
       .our-services-inner .serv-item {
         margin: 0 auto; } }
+    @media screen and (max-width: 767px) {
+      .our-services-inner .serv-item p {
+        padding: 0 5px; } }
     .our-services-inner .serv-item .serv-item-inner-img {
       display: table;
       -webkit-box-sizing: border-box;
@@ -591,7 +631,8 @@ nav.menu li a {
     padding: 10px;
     width: 100%; }
   .our-services .serv-item {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    height: 175px; }
     .our-services .serv-item .serv-item-inner-img {
       margin: 0 auto 15px auto;
       padding: 10px; }
@@ -620,7 +661,7 @@ nav.menu li a {
 .btn-go-services {
   position: relative;
   color: #584747;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 15px 20px;
   -webkit-border-radius: 50px;
           border-radius: 50px;
@@ -662,7 +703,8 @@ nav.menu li a {
               animation-timing-function: ease-in; }
 
 .price {
-  padding: 20px 3%; }
+  padding: 20px 3%;
+  margin-top: 30px; }
 
 .price-desc {
   max-width: 900px;
@@ -670,7 +712,7 @@ nav.menu li a {
   .price-desc h2, .price-desc p {
     text-align: center;
     line-height: 53px;
-    font-size: 2em;
+    font-size: 2.2em;
     text-transform: uppercase; }
   .price-desc p {
     letter-spacing: 1px; }
@@ -753,7 +795,7 @@ nav.menu li a {
   margin: 4% auto; }
   .portfolio .h2-portfolio {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2.4em;
     font-weight: bold;
     margin-bottom: 50px; }
 
@@ -837,6 +879,9 @@ nav.menu li a {
       -webkit-transform: rotate(360deg);
           -ms-transform: rotate(360deg);
               transform: rotate(360deg); }
+    @media screen and (max-width: 767px) {
+      .form-box .form-close {
+        top: 50px; } }
   .form-box:after {
     position: absolute;
     top: 0;
