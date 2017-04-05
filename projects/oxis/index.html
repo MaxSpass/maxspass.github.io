@@ -3,16 +3,18 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/main.css">
-      <!-- <link rel="stylesheet" href="css/main.min.css"> -->
+      <!-- <link rel="stylesheet" href="css/main.css"> -->
+      <link rel="stylesheet" href="css/main.min.css">
       <title>Oxis</title>
       <!--[if IE]>-->
       <!-- <link rel="stylesheet" media="screen, projection" type="text/css" href="css/ie.css">
          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
       <!--<![endif]-->
    </head>
-   
    <body>
+   <div id="preloader-box">
+      <div class="preloader"></div>
+   </div>
       <header id="top">
          <div class="btn-mobile">
             <span class="spin"></span>
@@ -46,13 +48,14 @@
          </div>
          <div class="text-preview invisible">
             <h1>WEB&nbsp;PRODUCTION</h1>
+            <h2>МЫ РЕАЛИЗУЕМ ВАШИ ИДЕИ!</h2>
          </div>
          <div class="btn-go-box">
-            <button id="btn-go" class="btn-go" value="под web-production">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <button id="btn-go" class="btn-go invisible" value="под web-production">ОТПРАВИТЬ ЗАЯВКУ</button>
          </div>
       </header>
       <section id="services" class="services">
-         <div class="serv-inner row">
+         <div class="serv-inner oxis-box row">
             <div class="col-sm-6 col-md-3">
                <div class="serv-caption-box invisible">
                   <img src="img/serv01.png" alt="Разработка и создание сайтов" class="img-caption">
@@ -79,11 +82,11 @@
             </div>
          </div>
          <div class="our-services row">
-            <div class="serv-text-preview col-xs-12 invisible">
+            <div class="serv-text-preview oxis-box invisible">
                <h2 class="h2-text-preview">Наши услуги</h2>
                <p class="p-text-preview">Сотрудничая с нами, вы получаете</p>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="oxis-box">
                <div class="our-services-inner row">
                   <div class="col-xs-6 col-md-4 col-lg-6">
                      <div class="serv-item">
@@ -222,7 +225,8 @@
       </div>
 
       <div id="contact" class="footer-box">
-         <div class="form-box invisible">
+<div class="oxis-box">
+            <div class="form-box invisible">
             <div class="form-close">&times;</div>
             <h4 class="h4-form">Заполните бриф</h4>
             <p class="p-form">и мы обязательно с <br>вами свяжемся!</p>
@@ -236,6 +240,7 @@
                <button id="btn-bottom" class="btn-form" type="submit" form="form" value="возле футера">отправить</button>
             </form>
          </div>
+</div>
 
          <div class="footer-inner">
             <footer class="container footer">

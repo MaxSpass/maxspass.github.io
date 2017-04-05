@@ -1,6 +1,12 @@
+var scrollTop = function() {
+	$(window).offset.top
+}();
 $(document).ready(function(){
+	$('#preloader-box').fadeOut(1000);
+	$(".preloader").delay(1000).fadeOut(1000);
+	$('html, body').animate({ scrollTop: 0 }, 'fast');
 
-$('.text-preview').append($('<img src="img/webpr.png" class="img-responsive">')).children('h1').css({'font-size':'.1px','color':'transparent'})
+// $('.text-preview').append($('<img src="../img/webpr.png" class="img-responsive">')).children('h1').css({'font-size':'.1px','color':'transparent'})
 
 // var isIE = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
 // var isChrome = !!window.chrome && (/chrome\/([\d\.]+)/i.exec(navigator.userAgent)[1] || true);
@@ -13,7 +19,7 @@ var sticky = function(){
 	var headerBox = $('.header-animate')
     var navPos, winPos, navHeight;
 
-    $('<div class="clone-nav-menu"></div>').insertBefore(headerBox)
+    $('<div class="clone-nav-menu hidden-xs"></div>').insertBefore(headerBox)
 
     function refreshVar() {
         navPos = headerBox.offset().top;
@@ -118,7 +124,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - $('.header-inner').height()
         }, 400);
         return false;
       }
@@ -132,7 +138,7 @@ $(function() {
 		});
 
 		$('.text-preview').viewportChecker({
-			classToAdd: 'visible animated fadeIn',
+			classToAdd: 'visible animated fadeInDown',
 		});
 
 		$('.serv-item-inner-img').viewportChecker({
@@ -153,6 +159,10 @@ $(function() {
 
 		$('.form-box').viewportChecker({
 			classToAdd: 'visible animated pulse'
+		});
+
+		$('#btn-go').viewportChecker({
+			classToAdd: 'visible animated fadeInUp'
 		});
 
 	$('.portfolio-list').owlCarousel({
