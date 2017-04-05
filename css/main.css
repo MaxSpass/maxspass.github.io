@@ -860,35 +860,38 @@ body {
   margin: 0 auto; }
 
 .item {
-  z-index: 5;
   color: rgba(255, 255, 255, 0.95);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 300px;
   margin-bottom: 20px;
+  height: 400px;
   background: #fff;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  z-index: 5;
+  -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); }
   .item.thumb1 {
-    background-image: url("../img/owox-test-thumb.jpg"); }
+    background-image: url("../img/owox-test-thumb.jpg");
+    background-color: #fbfbfb; }
   .item.thumb2 {
     background-image: url("../img/ia-thumb.png");
-    background-color: #46a4cf; }
+    background-color: #3580A2; }
   .item.thumb3 {
     background-image: url("../img/bh-thumb.png");
-    background-color: #c6a545; }
+    background-color: #ECD388; }
   .item.thumb4 {
     background-image: url("../img/bino-thumb.png");
     background-color: #e74c3c; }
   .item.thumb5 {
-    background-image: url("../img/giraffe-thumb.png"); }
+    background-image: url("../img/giraffe-thumb2.png");
+    background-color: #6b2950; }
   .item.thumb6 {
     background-image: url("../img/new-oxis-thumb.png"); }
   .item.thumb7 {
@@ -899,7 +902,10 @@ body {
     background-color: #ee1c25; }
   .item.thumb9 {
     background-image: url("../img/bc-thumb.png");
-    background-color: #e74880; }
+    background-color: #FF9EC0; }
+  .item.thumb10 {
+    background-image: url("../img/new-oxis-thumb.png");
+    background-color: #dcdcdc; }
   .item .date, .item .desc {
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out; }
@@ -922,15 +928,15 @@ body {
   .item .project-link {
     outline: none;
     position: absolute;
-    -webkit-transition: all .8s ease;
-    transition: all .8s ease;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
     width: 100%;
     height: 100%;
     background-color: transparent;
     z-index: 2; }
   .item:hover {
-    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.45);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.45); }
     .item:hover .desc-box {
       opacity: 1;
       z-index: 7;

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-$('.text-preview').append($('<img src="../img/webpr.png" class="img-responsive">')).children('h1').css({'font-size':'.1px','color':'transparent'})
+$('.text-preview').append($('<img src="img/webpr.png" class="img-responsive">')).children('h1').css({'font-size':'.1px','color':'transparent'})
 
 // var isIE = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
 // var isChrome = !!window.chrome && (/chrome\/([\d\.]+)/i.exec(navigator.userAgent)[1] || true);

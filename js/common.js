@@ -4,9 +4,18 @@ $(document).ready(function(){
   }
 
   $('.item').each(function(){
-    $(this).css({
-      'height': getRandomInt(250,777)
-    })
+    var priority = $(this).attr('data-priority');
+   
+    if (priority === '1') {
+       $(this).css({'height': getRandomInt(650,725)})
+    } else if (priority === '2') {
+        $(this).css({'height': getRandomInt(525,600)})
+    } else if (priority === '3') {
+        $(this).css({'height': getRandomInt(350,450)})
+    } else if (priority === '4') {
+        $(this).css({'height': getRandomInt(250,300)})
+    }
+   
   })
 
 
@@ -18,12 +27,13 @@ $('#projects-list').masonry({
   gutter: 20,
   fitWidth: true,
   columnWidth: 300
+  // originTop: false
 });
 
 
 })
 
-function first() {
+function caenvasOcean() {
         var canvas = document.getElementById('canvas');
       var ctx = canvas.getContext('2d');
 
