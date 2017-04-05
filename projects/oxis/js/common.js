@@ -9,7 +9,7 @@ $('.text-preview').append($('<img src="img/webpr.png" class="img-responsive">'))
 // }
 // else {}
 
-var stiky = function(){
+var sticky = function(){
 	var headerBox = $('.header-animate')
     var navPos, winPos, navHeight;
 
@@ -55,23 +55,23 @@ $('#btn-go, #btn-go-services, .btn-price').click(function(){
 	newModal.find('button.btn-form').attr('form',formModalId);
 	$('.masked-input').mask('+38 (099) 999-99-99');
 
-	thisButton.click(function(){
-	    if($(this).parent('form')[0].checkValidity()) {
-	        $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
-				newModal.html('<b>Спасибо, мы скоро с Вами свяжемся</b>');
-				setTimeout(function(){
-					console.log(thisVal)
-					newModal.fadeOut(700)
-					$('body').removeClass('shadow')
-					setTimeout(function(){
-						newModal.remove()
-					},800)
-				},1000)
-	        });
-	        return false;
-	    }
-	    // else  {}
-	});
+	// thisButton.click(function(){
+	//     if($(this).parent('form')[0].checkValidity()) {
+	//         $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
+	// 			newModal.html('<b>Спасибо, мы скоро с Вами свяжемся</b>');
+	// 			setTimeout(function(){
+	// 				console.log(thisVal)
+	// 				newModal.fadeOut(700)
+	// 				$('body').removeClass('shadow')
+	// 				setTimeout(function(){
+	// 					newModal.remove()
+	// 				},800)
+	// 			},1000)
+	//         });
+	//         return false;
+	//     }
+	//     // else  {}
+	// });
 	$('.form-close').click(function(){
 		var thisParentForm = $(this).parent('.form-box');
 		thisParentForm.fadeOut(400)
@@ -86,18 +86,18 @@ $('#btn-bottom').click(function(){
 	var thisVal = $(this).attr('value');
 	var thx = $('.h4-form');
 	var thxText = $('.p-form');
-    if($(this).parent('form')[0].checkValidity()) {
-        $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
-            $(':input').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
-			thx.fadeOut(300).text('Спасибо');
-			thxText.fadeOut(300).text('мы скоро с Вами свяжемся');
-			setTimeout(function(){
-					thx.fadeIn(350)
-					thxText.fadeIn(350)
-			},100)
-        });
-        return false;
-    }
+   //  if($(this).parent('form')[0].checkValidity()) {
+   //      $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
+   //          $(':input').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
+			// thx.fadeOut(300).text('Спасибо');
+			// thxText.fadeOut(300).text('мы скоро с Вами свяжемся');
+			// setTimeout(function(){
+			// 		thx.fadeIn(350)
+			// 		thxText.fadeIn(350)
+			// },100)
+   //      });
+   //      return false;
+   //  }
     // else  {}
 });
 
