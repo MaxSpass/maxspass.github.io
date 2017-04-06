@@ -581,7 +581,7 @@ nav.menu li a {
     margin-left: 3px; }
 
 .services .serv-inner {
-  padding: 0 5% 2% 5%; }
+  padding: 1.5% 5% 2% 3%; }
   .services .serv-inner > [class^=col-]:nth-child(2) .serv-caption-box {
     -webkit-animation-delay: .25s;
             animation-delay: .25s; }
@@ -593,10 +593,13 @@ nav.menu li a {
             animation-delay: .65s; }
   .services .serv-inner .serv-caption-box {
     padding: 10px;
-    max-width: 300px;
+    max-width: 275px;
     margin: 0 auto; }
+    .services .serv-inner .serv-caption-box .img-caption {
+      max-width: 180px; }
     .services .serv-inner .serv-caption-box .h2-caption {
-      font-size: 1.4em;
+      font-size: 1.3em;
+      font-weight: normal;
       word-wrap: normal; }
     @media screen and (max-width: 991px) {
       .services .serv-inner .serv-caption-box .h2-caption {

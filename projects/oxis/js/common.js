@@ -91,19 +91,19 @@ $('#btn-go, #btn-go-services, .btn-price').click(function(){
 $('#btn-bottom').click(function(){
 	var thisVal = $(this).attr('value');
 	var thx = $('.h4-form');
-	var thxText = $('.p-form');
-   //  if($(this).parent('form')[0].checkValidity()) {
-   //      $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
-   //          $(':input').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
-			// thx.fadeOut(300).text('Спасибо');
-			// thxText.fadeOut(300).text('мы скоро с Вами свяжемся');
-			// setTimeout(function(){
-			// 		thx.fadeIn(350)
-			// 		thxText.fadeIn(350)
-			// },100)
-   //      });
-   //      return false;
-   //  }
+	// var thxText = $('.p-form');
+ //    if($(this).parent('form')[0].checkValidity()) {
+ //        $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
+ //            $(':input').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
+	// 		thx.fadeOut(300).text('Спасибо');
+	// 		thxText.fadeOut(300).text('мы скоро с Вами свяжемся');
+	// 		setTimeout(function(){
+	// 				thx.fadeIn(350)
+	// 				thxText.fadeIn(350)
+	// 		},100)
+ //        });
+ //        return false;
+ //    }
     // else  {}
 });
 
@@ -134,35 +134,51 @@ $(function() {
 
 
 		$('.serv-caption-box').viewportChecker({
+			classToRemove: 'invisible',
 			classToAdd: 'visible animated zoomIn',
+			offset: 150
 		});
 
 		$('.text-preview').viewportChecker({
+			classToRemove: 'invisible',
 			classToAdd: 'visible animated fadeInDown',
+			offset: 150
 		});
 
 		$('.serv-item-inner-img').viewportChecker({
-			classToAdd: 'visible animated rotateIn'
+			classToRemove: 'invisible',
+			classToAdd: 'visible animated rotateIn',
+			offset: 150
 		});
 
 		$('.price-item').viewportChecker({
-			classToAdd: 'visible animated fadeInUp'
+			classToRemove: 'invisible',
+			classToAdd: 'visible animated fadeInUp',
+			offset: 150
 		});
 
 		$('.serv-text-preview').viewportChecker({
-			classToAdd: 'visible animated fadeInLeft'
+			classToRemove: 'invisible',
+			classToAdd: 'visible animated fadeInLeft',
+			offset: 150
 		});
 
 		$('.price-desc').viewportChecker({
-			classToAdd: 'visible animated fadeIn'
+			classToRemove: 'invisible',
+			classToAdd: 'visible animated fadeIn',
+			offset: 150
 		});
 
 		$('.form-box').viewportChecker({
-			classToAdd: 'visible animated pulse'
+			classToRemove: 'invisible',
+			classToAdd: 'visible animated pulse',
+			offset: 250
 		});
 
 		$('#btn-go').viewportChecker({
-			classToAdd: 'visible animated fadeInUp'
+			classToRemove: 'invisible',
+			classToAdd: 'visible animated fadeInUp',
+			offset: 150
 		});
 
 	$('.portfolio-list').owlCarousel({
