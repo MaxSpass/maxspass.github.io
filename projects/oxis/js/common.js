@@ -2,9 +2,14 @@ var scrollTop = function() {
 	$(window).offset.top
 }();
 $(document).ready(function(){
+	$('html, body').animate({ scrollTop: 0 }, 'fast');
 	$('#preloader-box').fadeOut(1000);
 	$(".preloader").delay(1000).fadeOut(1000);
-	$('html, body').animate({ scrollTop: 0 }, 'fast');
+	setTimeout(function(){
+		$('#preloader-box').remove();
+	},1500)
+
+
 
 // $('.text-preview').append($('<img src="../img/webpr.png" class="img-responsive">')).children('h1').css({'font-size':'.1px','color':'transparent'})
 
@@ -91,19 +96,19 @@ $('#btn-go, #btn-go-services, .btn-price').click(function(){
 $('#btn-bottom').click(function(){
 	var thisVal = $(this).attr('value');
 	var thx = $('.h4-form');
-	// var thxText = $('.p-form');
- //    if($(this).parent('form')[0].checkValidity()) {
- //        $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
- //            $(':input').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
-	// 		thx.fadeOut(300).text('Спасибо');
-	// 		thxText.fadeOut(300).text('мы скоро с Вами свяжемся');
-	// 		setTimeout(function(){
-	// 				thx.fadeIn(350)
-	// 				thxText.fadeIn(350)
-	// 		},100)
- //        });
- //        return false;
- //    }
+	var thxText = $('.p-form');
+   //  if($(this).parent('form')[0].checkValidity()) {
+   //      $.post('/Action.php','&this_val=' + thisVal + '&' + $(this).parent('form').serialize(), function(data) {
+   //          $(':input').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
+			// thx.fadeOut(300).text('Спасибо');
+			// thxText.fadeOut(300).text('мы скоро с Вами свяжемся');
+			// setTimeout(function(){
+			// 		thx.fadeIn(350)
+			// 		thxText.fadeIn(350)
+			// },100)
+   //      });
+   //      return false;
+   //  }
     // else  {}
 });
 
@@ -134,50 +139,50 @@ $(function() {
 
 
 		$('.serv-caption-box').viewportChecker({
-			classToRemove: 'invisible',
-			classToAdd: 'visible animated zoomIn',
+			classToRemove: 'invis',
+			classToAdd: 'animated zoomIn',
 			offset: 150
 		});
 
 		$('.text-preview').viewportChecker({
-			classToRemove: 'invisible',
-			classToAdd: 'visible animated fadeInDown',
+			classToRemove: 'invis',
+			classToAdd: 'animated fadeInDown',
 			offset: 150
 		});
 
 		$('.serv-item-inner-img').viewportChecker({
-			classToRemove: 'invisible',
-			classToAdd: 'visible animated rotateIn',
+			classToRemove: 'invis',
+			classToAdd: 'animated rotateIn',
 			offset: 150
 		});
 
 		$('.price-item').viewportChecker({
-			classToRemove: 'invisible',
-			classToAdd: 'visible animated fadeInUp',
+			classToRemove: 'invis',
+			classToAdd: 'animated fadeInUp',
 			offset: 150
 		});
 
 		$('.serv-text-preview').viewportChecker({
-			classToRemove: 'invisible',
-			classToAdd: 'visible animated fadeInLeft',
+			classToRemove: 'invis',
+			classToAdd: 'animated fadeInLeft',
 			offset: 150
 		});
 
 		$('.price-desc').viewportChecker({
-			classToRemove: 'invisible',
-			classToAdd: 'visible animated fadeIn',
+			classToRemove: 'invis',
+			classToAdd: 'animated fadeIn',
 			offset: 150
 		});
 
 		$('.form-box').viewportChecker({
-			classToRemove: 'invisible',
-			classToAdd: 'visible animated pulse',
+			classToRemove: 'invis',
+			classToAdd: 'animated pulse',
 			offset: 250
 		});
 
 		$('#btn-go').viewportChecker({
-			classToRemove: 'invisible',
-			classToAdd: 'visible animated fadeInUp',
+			classToRemove: 'invis',
+			classToAdd: 'animated fadeInUp',
 			offset: 150
 		});
 

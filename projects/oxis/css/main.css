@@ -214,6 +214,9 @@ textarea {
     -webkit-border-radius: 100%;
             border-radius: 100%; }
 
+.invis {
+  visibility: hidden !important; }
+
 body, html {
   overflow-x: hidden; }
 
