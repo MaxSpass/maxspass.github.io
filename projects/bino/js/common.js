@@ -1,11 +1,9 @@
 $(document).ready(function(){
+
+
 	$('.mobile-btn, .menu ul a').on('click',function(){
-		// var navMobile = $('nav.show');
-		// var navMobileHeight = navMobile.height();
 		if ($(window).width() <= 767)
 		{
-	// navMobile.css('height', '100%')
-// console.log(navMobileHeight)
 			$('.menu').toggleClass('show')
 			$('body').toggleClass('shadow')
 		}
@@ -19,8 +17,8 @@ $(document).ready(function(){
 		navigation: true,
 		slideSpeed: 2500,
 		rewindSpeed: 2500,
+		stopOnHover: true,
 		pagination: false,
-		// stopOnHover: true,
 		// paginationSpeed: 5000,
 		navigationText: ['<i class="arrow-left" data-icon="b"></i>', '<i class="arrow-right" data-icon="c"></i>'],
 	})
@@ -117,17 +115,9 @@ $('.gallery-nav li').on('click',function(){
 
 $(window).on('load resize', function () {
 	var galHeight = $('.gallery-item').width(),
-		caseHeight = $('#case_study').height(),
-		articleImgHeight = $('#blog .article .blog-img').height();
+		caseHeight = $('#case_study').height();
 
 	$('.gallery').css('min-height', galHeight)
-	$('#blog .article').height(articleImgHeight)
-
-	if ($(window).width() >= 768) {
-		$('body').removeClass('shadow');
-		$('.menu').removeClass('show');
-	}
-
 	// $('.study-box').css('height', caseHeight)
 	// $('.case-img-box').css('max-height', caseHeight)
 })

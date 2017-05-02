@@ -874,9 +874,7 @@ body {
   background: #fff;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 5;
-  -webkit-box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); }
+  z-index: 5; }
   .item.thumb1 {
     background-image: url("../img/owox-test-thumb.jpg");
     background-color: #fbfbfb; }
@@ -906,6 +904,9 @@ body {
   .item.thumb10 {
     background-image: url("../img/new-oxis-thumb.png");
     background-color: #dcdcdc; }
+  .item.thumb11 {
+    background-image: url("../img/logo.png");
+    background-color: #639828; }
   .item .date, .item .desc {
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out; }
@@ -934,19 +935,16 @@ body {
     height: 100%;
     background-color: transparent;
     z-index: 2; }
-  .item:hover {
-    -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.45);
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.45); }
-    .item:hover .desc-box {
-      opacity: 1;
-      z-index: 7;
-      display: block; }
-      .item:hover .desc-box .date, .item:hover .desc-box .desc {
-        -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-                transform: translateY(0); }
-    .item:hover .project-link {
-      background-color: rgba(0, 0, 0, 0.8); }
+  .item:hover .desc-box {
+    opacity: 1;
+    z-index: 7;
+    display: block; }
+    .item:hover .desc-box .date, .item:hover .desc-box .desc {
+      -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+              transform: translateY(0); }
+  .item:hover .project-link {
+    background-color: rgba(0, 0, 0, 0.8); }
 
 .link-to-project {
   color: #000;
