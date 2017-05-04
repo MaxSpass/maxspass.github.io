@@ -905,6 +905,9 @@ body {
     background-image: url("../img/new-oxis-thumb.png");
     background-color: #dcdcdc; }
   .item.thumb11 {
+    background-image: url("../img/quick-loan.png");
+    background-color: #09242e; }
+  .item.thumb12 {
     background-image: url("../img/logo.png");
     background-color: #639828; }
   .item .date, .item .desc {

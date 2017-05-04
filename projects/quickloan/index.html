@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="libs/nouislider/distribute/nouislider.min.css">
+      <link rel="stylesheet" href="css/main.min.css">
+      <link rel="stylesheet" href="css/media.css">
+      <!--  <link rel="stylesheet" href="css/main.min.css"> -->
+      <title>QuickLoan Page</title>
+      <!--[if IE]>-->
+      <!--<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script> -->
+      <!--<![endif]-->
+   </head>
+   <body>
+      <div id="top" class="top">
+         <div class="container">
+            <div class="navigation-box">
+               <nav>
+                  <ul class="menu">
+                     <li><a href="/">О нас</a></li>
+                     <li><a href="/">Как получить займ</a></li>
+                     <li><a href="/">Вопросы-ответы</a></li>
+                     <li><a href="/">Обратная связь</a></li>
+                  </ul>
+               </nav>
+               <div class="init-area">
+                  <a class="btn-reg" href="/">Регистрация</a>
+                  <a class="btn-login" href="/">Войти</a>
+               </div>
+               <div class="btn-mobile">
+                  <span class="spin"></span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <main class="wrapper">
+         <div class="container">
+            <div class="step-view">
+               <div class="step-inner active-step-1">
+                  <div class="step-item">
+                     <span class="step-dot"></span>
+                     <p class="step-desc">Личные данные</p>
+                  </div>
+                  <div class="step-item">
+                     <span class="step-dot"></span>
+                     <p class="step-desc">Адрес регистрации</p>
+                  </div>
+                  <div class="step-item">
+                     <span class="step-dot"></span>
+                     <p class="step-desc">Паспортные данные</p>
+                  </div>
+                  <div class="step-item">
+                     <span class="step-dot"></span>
+                     <p class="step-desc">Скидка</p>
+                  </div>
+                  <div class="step-item">
+                     <span class="step-dot"></span>
+                     <p class="step-desc">Подтверждение</p>
+                  </div>
+               </div>
+            </div>
+            <div class="content">
+               <div class="personal-form">
+                  <div class="request">
+                     <p>Заявка на микрозайм – шаг 1: Личные данные</p>
+                  </div>
+                  <div class="select-info brief-content">
+                     <form method="POST" id="personal_info" class="form">
+                        <p class="choise-text">Выберите сумму займа:</p>
+                        <div class="choise-info">
+                           <span class="amount-text">Сумма займа:</span>
+                           <span id="borrow_value" class="ru"></span>
+                        </div>
+                        <div class="slider-amount-box">
+                           <div class="btn-slider-box">
+                              <span id="minus_amount" class="btn-slider left"></span>
+                           </div>
+                           <div class="slider-box">
+                              <div id="slider_amount" class="slider"></div>
+                              <span class="range-amount min-amount">5 000</span>
+                              <span class="range-amount max-amount">80 000</span>
+                           </div>
+                           <div class="btn-slider-box">
+                              <span id="plus_amount" class="btn-slider right"></span>
+                           </div>
+                        </div>
+                        <div id="slider_time" class="slider"></div>
+                        <div id="color_chance" class="select-view">
+                           <div id="bg-emulation"></div>
+                           <div class="select-view-col-1">
+                              <div class="aprov-box">
+                                 <span id="prob_approv"></span>
+                                 <span class="aprov-text">Вероятность одобрения</span>
+                              </div>
+                           </div>
+                           <div class="select-view-col-2">
+                              <div class="aprov-desc">
+                                 <span class="aprov-text">Может потребоваться 
+                                 <span class="easter easter1">паспорт </span>
+                                 <span class="easter easter2">всё что у вас есть</span>
+                                 </span>
+                                 <div class="nodata-for-this-item">
+                                    <p>Вы берете: <span class="borrow-value ru"></span></p>
+                                    <p>До (включительно): <span>2 января, 2017</span></p>
+                                    <p>Платеж раз в 2 недели: <span>16 216 рублей</span></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <p class="choise-text">Как вам удобнее получить деньги?</p>
+                        <div class="hot-to-get">
+                           <div class="get-item">
+                              <input name="better_variant" checked value="На карту" id="choise_cart" class="input-cart" type="radio">
+                              <label for="choise_cart" class="choise-cart">
+                              <span class="choise-value">На карту</span>
+                              </label>  
+                           </div>
+                           <div class="get-item">
+                              <input name="better_variant" value="Наличными" id="choise_cash" class="input-cash" type="radio">
+                              <label for="choise_cash" class="choise-cash">
+                              <span class="choise-value">Наличными</span>
+                              </label>
+                           </div>
+                           <div class="get-item">
+                              <input name="better_variant" value="На счет" id="choise_bank" class="input-bank" type="radio">
+                              <label for="choise_bank" class="choise-bank">
+                              <span class="choise-value">На счет</span>
+                              </label>
+                           </div>
+                           <div class="get-item">
+                              <input name="better_variant" value="На кошелек" id="choise_web_wallet" class="input-web-wallet" type="radio">
+                              <label for="choise_web_wallet" class="choise-web-wallet">
+                              <span class="choise-value">На кошелек</span>
+                              </label>        
+                           </div>
+                           <div class="get-item">
+                              <input name="better_variant" value="Через Contact" id="choise_contact" class="input-contact" type="radio">
+                              <label for="choise_contact" class="choise-contact">
+                              <span class="choise-value">Через Contact</span>
+                              </label>
+                           </div>
+                        </div>
+                        <p class="choise-text">Заполните свои личные данные</p>
+                        <div class="form-content">
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Фамилия:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="lname" type="text">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Имя:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="fname" type="text">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Отчество:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="pname" type="text">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Дата рождения:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="datebirth" placeholder="дд.мм.гггг" type="text" class="datebirth-masked">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Номер телефона:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="telnum" placeholder="+7 (___) ___-__-__" type="tel" class="tel-masked">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Электронная почта:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="email">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="required-info">
+                           <div class="required-box">
+                              <input id="data_process" type="checkbox">
+                              <label for="data_process">Я согласен с публичной офертой и на обработку персональных данных.</label>
+                           </div>
+                           <div class="required-tagline">
+                              <span class="tag">Поля отмеченые</span> - обязательные для заполнения.
+                           </div>
+                           <div class="required-lock">
+                              <span class="locked-ico">
+                              Ваши персональные данные надежно защищены
+                              </span>
+                           </div>
+                           <button form="personal_info" disabled class="btn-go-1 btn-next-step" type="submit">Продолжить</button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="fair-box">
+                     <div class="annonce">
+                        <p>Заполнение анкеты необходимо для получение заёма. Заполните все пункты внимательно и честно – это скажется на вероятности одобрение вашего заёма.</p>
+                     </div>
+                     <span class="just">Вся информация является крайне приближенной </span>
+                  </div>
+               </div>
+               <div class="addr-form">
+                  <div class="request">
+                     <p>Заявка на микрозайм&nbsp;– шаг 2: Адрес регистрации</p>
+                  </div>
+                  <div class="select-info brief-content">
+                     <p class="choise-text">Укажите адрес Вашей регистрации:</p>
+                     <form method="POST" id="registered_adress" class="form">
+                        <div class="form-content">
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Регион:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="region" type="text">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Город:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="city" type="text">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Улица:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="street" type="text">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Дом:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="house" type="text">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Квартира:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="flat" type="text">
+                              </div>
+                           </div>
+                           <div class="form-field">
+                              <div class="field-desc">
+                                 <p class="required">Индекс:</p>
+                              </div>
+                              <div class="field-value">
+                                 <input name="index" type="text">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="required-info">
+                           <div class="required-tagline">
+                              <span class="tag">Поля отмеченые</span> - обязательные для заполнения.
+                           </div>
+                           <div class="required-lock">
+                              <span class="locked-ico">
+                              Ваши персональные данные надежно защищены
+                              </span>
+                           </div>
+                           <div class="btn-box">
+                              <span class="btn-next-step back">Вернутся</span>
+                              <button form="registered_adress" disabled="" class="btn-go-2 btn-next-step" type="submit">Продолжить</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer-box">
+            <div class="footer-inner">
+               <div class="social">
+                  <div class="social-inner">
+                     <ul>
+                        <li><a class="ico ico-vk" href="/"></a></li>
+                        <li><a class="ico ico-fb" href="/"></a></li>
+                        <li><a class="ico ico-tw" href="/"></a></li>
+                        <li><a class="ico ico-gl" href="/"></a></li>
+                        <li><a class="ico ico-ok" href="/"></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="footer-list">
+                  <p class="footer-desc">О займах</p>
+                  <ul>
+                     <li><a href="/">Заём на банковскую карту</a></li>
+                     <li><a href="/">Заём на QiWI кошелек</a></li>
+                     <li><a href="/">Заём на Яндекс.Деньги</a></li>
+                     <li><a href="/">Заём через Contact</a></li>
+                     <li><a href="/">Безопасность и защита данных</a></li>
+                     <li><a href="/">Гарантия возврата</a></li>
+                     <li><a href="/">Получение займа онлайн</a></li>
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <p class="footer-desc">О компании</p>
+                  <ul>
+                     <li><a href="/">О нас</a></li>
+                     <li><a href="/">Кодекс этики</a></li>
+                     <li><a href="/">Директорам МФО</a></li>
+                     <li><a href="/">О сервисе</a></li>
+                     <li><a href="/">Партнерам</a></li>
+                     <li><a href="/">Как получить займ?</a></li>
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <p class="footer-desc">Помощь</p>
+                  <ul>
+                     <li><a href="/"></a></li>
+                     <li><a href="/">Вопросы и ответы</a></li>
+                     <li><a href="/">Политика обработки персональных данных</a></li>
+                     <li><a href="/">Публичная оферта</a></li>
+                     <li><a href="/">Оговорка на частность</a></li>
+                     <li><a href="/">Правовая информация</a></li>
+                     <li><a href="/">Обратная связь</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="bottom">
+            <div class="container">
+               <p>Сервис предназначен для лиц старше 18лет</p>
+            </div>
+         </div>
+      </footer>
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
+      <script src="js/libs.min.js"></script>
+      <!--<script src="libs/jquery-validation/dist/additional-methods.min.js"></script>
+         <script src="libs/nouislider/distribute/nouislider.min.js"></script>
+         <script src="libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+         <script src="libs/wnumb/wNumb.js"></script> -->
+      <script src="js/common.js"></script>
+   </body>
+</html>
