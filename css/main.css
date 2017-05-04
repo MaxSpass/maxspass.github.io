@@ -910,6 +910,9 @@ body {
   .item.thumb12 {
     background-image: url("../img/logo.png");
     background-color: #639828; }
+  .item.thumb13 {
+    background-image: url("../img/our.png");
+    background-color: #f4f4f4; }
   .item .date, .item .desc {
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out; }
