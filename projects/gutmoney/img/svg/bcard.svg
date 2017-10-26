@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="155px" height="101px" viewBox="30 30 155 101" enable-background="new 30 30 155 101" xml:space="preserve">
+<!-- <filter  width="200%" height="200%" x="-50%" y="-50%" id="c">
+	<feMorphology  operator="dilate" in="SourceGraphic" result="SvgjsFeMorphology1196Out"></feMorphology>
+	<feOffset  in="SvgjsFeMorphology1196Out" result="SvgjsFeOffset1197Out"></feOffset>
+	<feGaussianBlur  stdDeviation="15" in="SvgjsFeOffset1197Out" result="SvgjsFeGaussianBlur1198Out"></feGaussianBlur>
+	<feComposite  in2="SourceAlpha" operator="out" in="SvgjsFeGaussianBlur1198Out" result="SvgjsFeComposite1199Out"></feComposite>
+</filter>
+<filter  width="200%" height="200%" x="-50%" y="-50%" id="a">
+	<feMorphology  operator="dilate" in="SourceGraphic" result="SvgjsFeMorphology1184Out"></feMorphology>
+	<feOffset  in="SvgjsFeMorphology1184Out" result="SvgjsFeOffset1185Out"></feOffset>
+	<feGaussianBlur  stdDeviation="15" in="SvgjsFeOffset1185Out" result="SvgjsFeGaussianBlur1186Out"></feGaussianBlur>
+	<feComposite  in2="SourceAlpha" operator="out" in="SvgjsFeGaussianBlur1186Out" result="SvgjsFeComposite1187Out"></feComposite>
+</filter> -->
+<g filter="url(#a)">
+	<path opacity="0.1" fill="#445A87" d="M180,131H60c-2.761,0-5-2.239-5-5V46c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+		C185,128.761,182.761,131,180,131z"/>
+</g>
+<path fill="#FFFFFF" d="M180,131H60c-2.761,0-5-2.239-5-5V46c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+	C185,128.761,182.761,131,180,131z"/>
+<path fill="#FFFFFF" d="M180,131H60c-2.761,0-5-2.239-5-5V46c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+	C185,128.761,182.761,131,180,131z"/>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M180,131H60c-2.761,0-5-2.239-5-5V46c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+			C185,128.761,182.761,131,180,131z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#424C53" stroke-width="10" stroke-miterlimit="50" d="M180,131H60
+		c-2.761,0-5-2.239-5-5V46c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80C185,128.761,182.761,131,180,131z"/>
+</g>
+<path fill="#424C53" d="M55,89V62h130v27H55z"/>
+<g filter="url(#c)">
+	<path opacity="0.1" fill="#445A87" d="M155,120H35c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+		C160,117.761,157.761,120,155,120z"/>
+</g>
+<path fill="#FFFFFF" d="M155,120H35c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+	C160,117.761,157.761,120,155,120z"/>
+<path fill="#FFFFFF" d="M155,120H35c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+	C160,117.761,157.761,120,155,120z"/>
+<g>
+	<defs>
+		<path id="SVGID_3_" d="M155,120H35c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+			C160,117.761,157.761,120,155,120z"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_4_)" fill="none" stroke="#424C53" stroke-width="10" stroke-miterlimit="50" d="M155,120H35
+		c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80C160,117.761,157.761,120,155,120z"/>
+</g>
+<path fill="#424C53" d="M129,95c3.866,0,7,3.134,7,7s-3.134,7-7,7c-3.866,0-7-3.134-7-7S125.134,95,129,95z"/>
+<path fill="#424C53" d="M140,95c3.866,0,7,3.134,7,7s-3.134,7-7,7s-7-3.134-7-7S136.134,95,140,95z M45.5,100h24
+	c1.381,0,2.5,1.119,2.5,2.5s-1.119,2.5-2.5,2.5h-24c-1.381,0-2.5-1.119-2.5-2.5S44.119,100,45.5,100z M77.5,100h14
+	c1.381,0,2.5,1.119,2.5,2.5s-1.119,2.5-2.5,2.5h-14c-1.381,0-2.5-1.119-2.5-2.5S76.119,100,77.5,100z M45.5,63h99
+	c1.381,0,2.5,1.119,2.5,2.5s-1.119,2.5-2.5,2.5h-99c-1.381,0-2.5-1.119-2.5-2.5S44.119,63,45.5,63z"/>
+</svg>

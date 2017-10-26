@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="130px" height="90px" viewBox="30 30 130 90" enable-background="new 30 30 130 90" xml:space="preserve">
+<filter  width="200%" height="200%" x="-50%" y="-50%" id="a">
+	<feMorphology  operator="dilate" in="SourceGraphic" result="SvgjsFeMorphology1149Out"></feMorphology>
+	<feOffset  in="SvgjsFeMorphology1149Out" result="SvgjsFeOffset1150Out"></feOffset>
+	<feGaussianBlur  stdDeviation="15" in="SvgjsFeOffset1150Out" result="SvgjsFeGaussianBlur1151Out"></feGaussianBlur>
+	<feComposite  in2="SourceAlpha" operator="out" in="SvgjsFeGaussianBlur1151Out" result="SvgjsFeComposite1152Out"></feComposite>
+</filter>
+<g filter="url(#a_1_)">
+	<path opacity="0.1" fill="#445A87" d="M155,120H35c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+		C160,117.761,157.761,120,155,120z"/>
+</g>
+<path fill="#FFFFFF" d="M155,120H35c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+	C160,117.761,157.761,120,155,120z"/>
+<path fill="#424C53" d="M108.8,67.8l2.87-4.91c0.675-1.154,0.287-2.636-0.867-3.311c-0.011-0.006-0.022-0.013-0.033-0.019
+	l-5.66-3.24c-1.172-0.674-2.667-0.277-3.35,0.89l-2.86,4.92L108.8,67.8z M97.67,64.24l-14.7,25.28
+	c-0.677,1.152-0.292,2.635,0.86,3.313c0.01,0.006,0.02,0.012,0.03,0.017l5.66,3.24c1.18,0.68,2.67,0.28,3.35-0.89l14.71-25.29
+	L97.67,64.24z M80,96.25l0.57,8.76l7.93-3.89c0.67-1.16,0.4-2.57-0.6-3.15l-4.85-2.78C82.05,94.61,80.68,95.09,80,96.25z M35,30h120
+	c2.761,0,5,2.239,5,5v6H30v-6C30,32.239,32.239,30,35,30z"/>
+<path fill="#D6DCDF" d="M142.5,34c0.828,0,1.5,0.672,1.5,1.5s-0.672,1.5-1.5,1.5s-1.5-0.672-1.5-1.5S141.672,34,142.5,34z M147.5,34
+	c0.828,0,1.5,0.672,1.5,1.5s-0.672,1.5-1.5,1.5s-1.5-0.672-1.5-1.5S146.672,34,147.5,34z M152.5,34c0.828,0,1.5,0.672,1.5,1.5
+	s-0.672,1.5-1.5,1.5s-1.5-0.672-1.5-1.5S151.672,34,152.5,34z"/>
+</svg>

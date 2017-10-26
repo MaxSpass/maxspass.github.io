@@ -857,7 +857,8 @@ body {
   margin-bottom: 50px; }
 
 .projects-list {
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 50px; }
 
 .item {
   color: rgba(255, 255, 255, 0.95);
@@ -871,7 +872,7 @@ body {
   width: 300px;
   margin-bottom: 20px;
   height: 400px;
-  background: #fff;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5; }
@@ -913,6 +914,37 @@ body {
   .item.thumb13 {
     background-image: url("../img/our.png");
     background-color: #f4f4f4; }
+  .item.item_svg:before {
+    content: '';
+    width: 100%;
+    height: 70px;
+    display: block;
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .item.item_svg.thumb14:before {
+    background-image: url("../img/logo_microdengi.svg"); }
+  .item.item_svg.thumb15:before {
+    background-image: url("../img/logo_gutmoney.svg"); }
+  .item.item_svg.thumb16:before {
+    background-image: url("../img/logo_moneyteka.svg"); }
+  .item.item_svg.thumb17:before {
+    background-image: url("../img/logo_zaimco.svg"); }
+  .item.item_svg.thumb18:before {
+    background-image: url("../img/logo_zaim643.svg"); }
+  .item.item_svg.thumb19:before {
+    background-image: url("../img/logo_zanimalov.svg"); }
+  .item.item_svg.thumb20:before {
+    background-image: url("../img/logo_israelchamber.svg");
+    background-size: 50px; }
+  .item.item_svg.thumb21:before {
+    background-image: url("../img/logo_hitsi.svg"); }
   .item .date, .item .desc {
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out; }
@@ -986,3 +1018,11 @@ body {
   vertical-align: middle;
   position: relative;
   margin: 30px auto; }
+
+.title {
+  color: #000;
+  background: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 45px; }

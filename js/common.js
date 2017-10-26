@@ -21,14 +21,16 @@ $(document).ready(function(){
 
 
 
-$('#projects-list').masonry({
-  // options
-  itemSelector: '.item',
-  gutter: 20,
-  fitWidth: true,
-  columnWidth: 300
-  // originTop: false
-});
+$('.masonry').each(function(){
+    $(this).masonry({
+        // options
+        itemSelector: '.item',
+        gutter: 20,
+        fitWidth: true,
+        columnWidth: 300
+        // originTop: false
+    });
+})
 
 
 })

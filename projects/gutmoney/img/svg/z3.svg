@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="130px" height="90px" viewBox="30 30 130 90" enable-background="new 30 30 130 90" xml:space="preserve">
+<filter  width="200%" height="200%" x="-50%" y="-50%" id="a">
+	<feMorphology  operator="dilate" in="SourceGraphic" result="SvgjsFeMorphology1137Out"></feMorphology>
+	<feOffset  in="SvgjsFeMorphology1137Out" result="SvgjsFeOffset1138Out"></feOffset>
+	<feGaussianBlur  stdDeviation="15" in="SvgjsFeOffset1138Out" result="SvgjsFeGaussianBlur1139Out"></feGaussianBlur>
+	<feComposite  in2="SourceAlpha" operator="out" in="SvgjsFeGaussianBlur1139Out" result="SvgjsFeComposite1140Out"></feComposite>
+</filter>
+<g filter="url(#a_1_)">
+	<path opacity="0.1" fill="#445A87" d="M155,120H35c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+		C160,117.761,157.761,120,155,120z"/>
+</g>
+<path fill="#FFFFFF" d="M155,120H35c-2.761,0-5-2.239-5-5V35c0-2.761,2.239-5,5-5h120c2.761,0,5,2.239,5,5v80
+	C160,117.761,157.761,120,155,120z"/>
+<path fill="#424C53" d="M113,95.9v6.1c0,1.657-1.343,3-3,3s-3-1.343-3-3v-6.1c-4.681-1.673-7.119-6.823-5.446-11.504
+	c0.908-2.54,2.906-4.538,5.446-5.446V60c0-1.657,1.343-3,3-3s3,1.343,3,3v18.95c4.681,1.673,7.119,6.823,5.446,11.504
+	C117.538,92.994,115.54,94.992,113,95.9z M110,82.71c-2.604,0-4.715,2.111-4.715,4.715c0,2.604,2.111,4.715,4.715,4.715
+	s4.715-2.111,4.715-4.715C114.715,84.821,112.604,82.71,110,82.71z M89,74.57c-0.002,3.812-2.406,7.209-6,8.48V102
+	c0,1.657-1.343,3-3,3s-3-1.343-3-3V83.05c-4.683-1.665-7.13-6.812-5.465-11.495c0.907-2.551,2.914-4.558,5.465-5.465V60
+	c0-1.657,1.343-3,3-3s3,1.343,3,3v6.1C86.591,67.369,88.994,70.762,89,74.57z M84.71,74.57c0.002-2.601-2.106-4.711-4.707-4.713
+	c-2.601-0.002-4.711,2.106-4.713,4.707c0,0.002,0,0.004,0,0.006c0.002,2.601,2.112,4.709,4.713,4.707
+	C82.602,79.275,84.708,77.169,84.71,74.57z M35,30h120c2.761,0,5,2.239,5,5v6H30v-6C30,32.239,32.239,30,35,30z"/>
+<path fill="#D6DCDF" d="M142.5,34c0.828,0,1.5,0.672,1.5,1.5s-0.672,1.5-1.5,1.5s-1.5-0.672-1.5-1.5S141.672,34,142.5,34z M147.5,34
+	c0.828,0,1.5,0.672,1.5,1.5s-0.672,1.5-1.5,1.5s-1.5-0.672-1.5-1.5S146.672,34,147.5,34z M152.5,34c0.828,0,1.5,0.672,1.5,1.5
+	s-0.672,1.5-1.5,1.5s-1.5-0.672-1.5-1.5S151.672,34,152.5,34z"/>
+</svg>

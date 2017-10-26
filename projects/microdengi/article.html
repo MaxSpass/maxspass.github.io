@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#4ebe7d">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>MicroDengi</title>
+    <link rel="stylesheet" href="libs/nouislider/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/typical/typical.css">
+    <link rel="stylesheet" href="css/blocks/breadcrumbs.css">
+  </head>
+  <body class="loader false">
+    <div class="loader__body">
+      <div class="loader__inner">
+        <div class="loader__inner-line"></div>
+        <div class="loader__cloud"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="shadow-toggle menu-toggle"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <div class="logo__box"><a class="logo__link" href="/"><img class="logo__img" src="img/svg/logo.svg" title="Microdengi - микро кредиты" alt="Microdengi - микро кредиты"></a></div>
+            <div class="login-area-box">
+              <div class="login-area">
+                <div class="fly"><span class="button button_dark button_small button_w180 login-form-btn login-form_toggle">Войти</span></div>
+                <div class="login-area__shadow login-form_toggle"></div>
+                <div class="login-area__inner">
+                  <form class="login-area__form">
+                    <div class="login-area__form-title text">Вход в личный кабинет</div>
+                    <div class="input-wrap input-wrap_small-input login-area__input-wrap">
+                      <input class="default-input" type="text" required="required">
+                      <label class="default-label">Телефон</label>
+                    </div>
+                    <div class="input-wrap input-wrap_small-input login-area__input-wrap">
+                      <input class="default-input" type="password" required="required">
+                      <label class="default-label">Пароль</label>
+                    </div>
+                    <button class="login-area__form-submit button button_dark">Войти</button>
+                    <div class="login-area__form-footer"><a class="login-area__form-footer-btn login-area__form-footer-btn_forgot" href="#">Забыли пароль?</a><a class="login-area__form-footer-btn login-area__form-footer-btn_reg" href="#">Регистрация</a></div>
+                  </form>
+                </div>
+                <svg class="login-area_toggle menu-toggle hidden-md hidden-lg">
+                  <use xlink:href="#menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__top-listener">
+          <div class="menu-box" id="main_menu">
+            <div class="fly flying">
+              <div class="menu-box__login"><span class="button button_dark button_default menu-box__btn mobile-menu_close">Вход</span><a class="button button_dark button_default menu-box__btn" href="#">Регистрация</a>
+              </div>
+            </div>
+            <div class="menu-box__inner">
+              <ul class="menu__list">
+                <li class="menu__item"><span class="menu__link">О компании</span>
+                  <ul class="menu__list_sub">
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./about">О нас</a></li>
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./contacts.html">Контакты</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><span class="menu__link">Получить деньги</span>
+                  <ul class="menu__list_sub">
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./how-it-work.html">Как это работает</a></li>
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./how-to-loan.html">Как получить заем</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><span class="menu__link">Помощь</span>
+                  <ul class="menu__list_sub">
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./faq.html">Вопросы и ответы</a></li>
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./feedback.html">Обратная связь</a></li>
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./documents.html">Документы</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item"><span class="menu__link">Статьи</span>
+                  <ul class="menu__list_sub">
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./document.html">Заем на банковский счет</a></li>
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./document.html">Безопасность онлайн-займов</a></li>
+                    <li class="menu__item_sub"><a class="menu__link_sub" href="./document.html">Исправление кредитной истории</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="bread-crumbs-wrapper">
+        <ul class="bread-crumbs container">
+          <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="/">Главная</a>
+          </li>
+          <li class="bread-crumbs__item"><span class="disable">Исправление кредитной истории</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pageArticles" id="main_content">
+        <div class="container text-content">
+          <h1 class="title title-h3">Исправление кредитной истории</h1>
+          <p class="text">Нарушение графика и просрочка по кредиту фиксируются в кредитном досье. Если после своих ошибок заемщик захочет снова взять деньги в долг, то негативные записи в истории помешают этому: банки либо будут отказывать, либо одобрят заявку, но только на очень невыгодных условиях, чтобы компенсировать свои риски. Поэтому должнику лучше позаботиться об исправлении собственной финансовой репутации.</p>
+          <p class="text">Однако не стоит обращаться в сомнительные конторы, предлагающие за отдельную плату «все исправить». Самый быстрый способ улучшить кредитную историю — самостоятельно взять и погасить несколько микрозаймов. Почему это сработает и чем поможет?</p>
+          <p class="text">Банку в первую очередь важно, чтобы клиент обладал финансовой дисциплиной. И в кредитной истории проверяется именно это, только потом обращают внимание на текущую долговую нагрузку. Не всегда важно количество и размер обязательств, но вот качество кредитного портфеля имеет большое значение.</p>
+          <p class="text">Хранится кредитная история 25 лет, и ошибка молодости может перекрыть доступ к заемным средствам, даже если в конце концов долг был выплачен вместе с процентами и штрафами. Но если эта заметка будет последней в досье, то после нее сложно будет взять крупную сумму. Вы не сможете оформить ипотеку, если давно просрочили потребкредит и после этого не обращались в банки много лет.</p>
+          <h2 class="title title-h4">Почему нужно исправлять и улучшать кредитную историю</h2>
+          <p class="text">Банку в первую очередь важно, чтобы клиент обладал финансовой дисциплиной. И в кредитной истории проверяется именно это, только потом обращают внимание на текущую долговую нагрузку. Не всегда важно количество и размер обязательств, но вот качество кредитного портфеля имеет большое значение.</p>
+          <p class="text">Хранится кредитная история 25 лет, и ошибка молодости может перекрыть доступ к заемным средствам, даже если в конце концов долг был выплачен вместе с процентами и штрафами. Но если эта заметка будет последней в досье, то после нее сложно будет взять крупную сумму. Вы не сможете оформить ипотеку, если давно просрочили потребкредит и после этого не обращались в банки много лет.</p>
+          <div class="banner__container banner__large hidden-xs hidden-sm"><a class="banner__link" href="#" target="_blank"><img class="banner__img" src="http://via.placeholder.com/970x250"></a></div>
+          <p class="text">Банку в первую очередь важно, чтобы клиент обладал финансовой дисциплиной. И в кредитной истории проверяется именно это, только потом обращают внимание на текущую долговую нагрузку. Не всегда важно количество и размер обязательств, но вот качество кредитного портфеля имеет большое значение.</p>
+          <p class="text">Хранится кредитная история 25 лет, и ошибка молодости может перекрыть доступ к заемным средствам, даже если в конце концов долг был выплачен вместе с процентами и штрафами. Но если эта заметка будет последней в досье, то после нее сложно будет взять крупную сумму. Вы не сможете оформить ипотеку, если давно просрочили потребкредит и после этого не обращались в банки много лет.</p>
+        </div>
+
+        <div class="container other-articles">
+          <div class="flex flex_space-bewtween flex_baseline articles-box_title"><span><span>
+                <h2 class="title title-h4">Другие полезные статьи</h2></span></span><a class="other-articles__more" href="#">Все статьи
+              <svg>
+                <use xlink:href="#arrow_page" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg></a></div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="article-prev">
+                <div class="article-prev__pic" href="/article.html"><img class="article-prev__img" src="img/articles/bank.jpg" alt="Заем на банковский счет" title=""><a class="article-prev__bg" href="#"></a></div><a class="article-prev__title _h3">Заем на банковский счет</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="article-prev">
+                <div class="article-prev__pic" href="/article.html"><img class="article-prev__img" src="img/articles/online_loan.jpg" alt="Особенности займов онлайн" title=""><a class="article-prev__bg" href="#"></a></div><a class="article-prev__title _h3">Особенности займов онлайн</a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="article-prev">
+                <div class="article-prev__pic" href="/article.html"><img class="article-prev__img" src="img/articles/finhealth.jpg" alt="Получение займа онлайн" title=""><a class="article-prev__bg" href="#"></a></div><a class="article-prev__title _h3">Получение займа онлайн</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sprite-box"><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 8 8" id="arrow_page" xmlns="http://www.w3.org/2000/svg"><path class="ast0" d="M7.8 4.5c.3-.3.3-.7 0-1L4.6.2c-.8-.7-1.9.4-1.2 1.2l1.4 1.4c.3.2.2.4-.1.4H.8c-.4 0-.8.4-.8.8s.4.8.8.8h3.9c.3 0 .4.2.2.4L3.4 6.6c-.7.8.4 1.9 1.2 1.2l3.2-3.3z"/></symbol><symbol viewBox="0 0 74 86" id="cart" xmlns="http://www.w3.org/2000/svg"><path class="bcls-1" d="M71.99 8.1h-23V4.02a4 4 0 0 0-4-4h-16a4 4 0 0 0-4 4V8.1h-23a2 2 0 0 0 0 4h3.73l2.54 66.58a7.51 7.51 0 0 0 7.51 7.27h42.4a7.51 7.51 0 0 0 7.51-7.27l2.54-66.58h3.73a2 2 0 0 0 0-4zm-43-4.06h15.94V8.1h-15.9zm32.66 74.53a3.49 3.49 0 0 1-3.49 3.38H15.8a3.49 3.49 0 0 1-3.49-3.38L9.77 12.14h54.45zm-38.33-13a2 2 0 0 0 2-2.06l-.63-33a2 2 0 0 0-2-2 2 2 0 0 0-2 2.06l.63 33a2 2 0 0 0 2.04 2.02zm13.64 0a2 2 0 0 0 2-2V30.5a2 2 0 1 0-4 0v33A2 2 0 0 0 37 65.59zm13.6 0a2 2 0 0 0 2-2l.63-33a2 2 0 1 0-4-.08l-.63 33a2 2 0 0 0 2.04 2.1z"/></symbol><symbol viewBox="0 0 15 15" id="close" xmlns="http://www.w3.org/2000/svg"><path class="cst0" d="M3.6 1L14 11.4c.7.7.7 1.9 0 2.6-.7.7-1.9.7-2.6 0L1 3.6C.3 2.9.3 1.7 1 1 1.7.3 2.9.3 3.6 1z"/><path class="cst0" d="M14 1c.7.7.7 1.9 0 2.6L3.6 14c-.7.7-1.9.7-2.6 0-.7-.7-.7-1.9 0-2.6L11.4 1c.7-.7 1.8-.7 2.6 0z"/></symbol><symbol viewBox="0 0 25 25" id="close_thin" xmlns="http://www.w3.org/2000/svg"><path d="M24.99 1.13L23.87 0 12.5 11.37 1.12 0 0 1.13 11.37 12.5 0 23.87 1.12 25 12.5 13.62 23.87 25l1.12-1.13L13.62 12.5z"/></symbol><symbol viewBox="0 0 18 25" id="delete_profile" xmlns="http://www.w3.org/2000/svg"><path class="ecls-1" d="M17.19 2.5h-4.43V.81a.81.81 0 0 0-.81-.82H6.03a.81.81 0 0 0-.81.82V2.5H.79a.81.81 0 0 0-.81.82v2.51a.81.81 0 0 0 .81.82h.25l.74 17.57a.81.81 0 0 0 .81.78h12.8a.81.81 0 0 0 .81-.78l.74-17.57h.25a.81.81 0 0 0 .81-.82V3.32a.81.81 0 0 0-.81-.82zM6.85 1.62h4.3v.88h-4.3zm7.78 21.74H3.37l-.7-16.72h12.66zm1.76-18.35H1.62v-.88h14.77zM5.76 20.86a.81.81 0 0 0 .81-.82V9.96a.81.81 0 1 0-1.62 0v10.09a.81.81 0 0 0 .8.82zm3.25 0a.81.81 0 0 0 .81-.82V9.96a.81.81 0 1 0-1.62 0v10.09a.81.81 0 0 0 .8.82zm3.25 0a.81.81 0 0 0 .81-.82V9.96a.81.81 0 1 0-1.62 0v10.09a.81.81 0 0 0 .8.82z"/></symbol><symbol viewBox="0 0 34 50" id="doc" xmlns="http://www.w3.org/2000/svg"><path class="fcls-1" d="M3.14 1h20.44l9.41 9.41v36.46A2.14 2.14 0 0 1 30.85 49H3.14A2.14 2.14 0 0 1 1 46.88V3.12A2.14 2.14 0 0 1 3.14 1m0-1A3.13 3.13 0 0 0 0 3.13v43.75a3.13 3.13 0 0 0 3.14 3.13h27.71a3.13 3.13 0 0 0 3.14-3.12V10l-10-10z"/><path class="fcls-1" d="M33.5 10.5h-7.77a2.23 2.23 0 0 1-2.23-2.23V.5z"/><path class="fcls-2" d="M8 19.5h16a1 1 0 0 0 0-2H8a1 1 0 0 0 0 2zm16 5H8a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2zm0 7H8a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2zm-7.62 7H8a1 1 0 0 0 0 2h8.38a1 1 0 1 0 0-2z"/></symbol><symbol viewBox="0 0 70 70" id="lifebuoy" xmlns="http://www.w3.org/2000/svg"><path class="gcls-1" d="M35 70A35 35 0 0 1 3.11 20.55 35 35 0 1 1 35 70zm0-68A33.09 33.09 0 0 0 4.94 21.4 33 33 0 1 0 35.01 2.02z"/><path class="gcls-1" d="M35 53.69A18.69 18.69 0 1 1 53.69 35 18.71 18.71 0 0 1 35 53.69zm0-35.39a16.69 16.69 0 1 0 16.69 16.69A16.71 16.71 0 0 0 35 18.3z"/><path class="gcls-1" d="M38.918 52.317l1.926-.538 4.378 15.68-1.926.538zM24.708 1.98l1.92-.54 4.411 15.686-1.92.54zM24.9 67.488l4.38-15.71 1.927.537-4.38 15.71zM38.797 17.687L43.186 1.98l1.926.538-4.389 15.709zM51.786 29.261l15.893-4.431.538 1.926-15.894 4.432zM2.163 43.129l15.525-4.338.538 1.926-15.525 4.338zM51.772 40.727l.538-1.927 15.92 4.446-.537 1.926zM1.892 27.466l.54-1.925 15.49 4.354-.54 1.925zM2.72 20.66h2v1h-2zM4.72 18.64h-2v-2h2zm0-4h-2v-2h2zm0-4h-2v-2h2zm.31-3.54l-1.8-.87a5.09 5.09 0 0 1 1.6-1.91L6 5.94a3.09 3.09 0 0 0-.97 1.07zm2.38-1.71l-.25-2a5.07 5.07 0 0 1 .64 0h1.51v2H7.8zm10 0h-2v-2h2zm-4 0h-2v-2h2zM19.42 3.28h1v2h-1zm0 61.44h1v2h-1zM17.43 66.72h-2v-2h2zm-4 0h-2v-2h2zm-4 0H7.37l.15-2h1.91zm-4.38-.76a5.09 5.09 0 0 1-1.71-1.75l1.73-1a3.09 3.09 0 0 0 1 1.06zm-2.39-4.1v-2h2v1.94zm2-4h-2v-2h2zm0-4h-2v-2h2zM2.72 48.9h2v1h-2zm62.56-.56h2v1h-2zM62.24 66.72h-1.53v-2h1.46a1.84 1.84 0 0 0 .39 0l.25 2a5 5 0 0 1-.57 0zm-3.55 0h-2v-2h2zm-4 0h-2v-2h2zm10.53-1l-1.17-1.62a3.1 3.1 0 0 0 1-1.16l1.8.87a5.09 5.09 0 0 1-1.68 1.95zm2.11-4.3h-2v-2h2zm0-4h-2v-2h2zm0-4h-2v-2h2zM49.59 64.72h1v2h-1zm0-61.44h1v2h-1zM67.28 18.63h-2v-2h2zm0-4h-2v-2h2zm0-4h-2v-2h2zm-2.31-3.54a3.1 3.1 0 0 0-1-1.15l1.16-1.63a5.1 5.1 0 0 1 1.61 1.9zm-2.38-1.7h-1.9v-2h1.48a5 5 0 0 1 .63 0zm-3.92 0h-2v-2h2zm-4 0h-2v-2h2zM65.28 20.66h2v1h-2z"/></symbol><symbol viewBox="0 0 18 25.6" id="lock" xmlns="http://www.w3.org/2000/svg"><path class="hst0" d="M16 25.6H1.9c-1.1 0-2-.9-2-2v-10c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v10c0 1.1-.8 2-1.9 2zm0-12H2v10h14v-10z"/><path class="hst0" d="M15.2 13.6H2.8V6.2C2.8 2.8 5.6 0 9 0c3.4 0 6.2 2.8 6.2 6.2v7.4zm-10.4-2h8.4V6.2C13.2 3.9 11.3 2 9 2 6.7 2 4.8 3.9 4.8 6.2v5.4zm3.3 5h1.8v3.9H8.1z"/></symbol><symbol viewBox="0 0 36 36" id="logout-dark" xmlns="http://www.w3.org/2000/svg"><path class="icls-1" d="M33.12 2a.88.88 0 0 1 .88.88v30.24a.88.88 0 0 1-.88.88H2.88a.88.88 0 0 1-.88-.88V24h12v6.16l3.25-2.6 10-8 2-1.56-2-1.56-10-8L14 5.84V12H2V2.88A.88.88 0 0 1 2.88 2h30.24m0-2H2.88A2.88 2.88 0 0 0 0 2.88V14h16v-4l10 8-10 8v-4H0v11.12A2.88 2.88 0 0 0 2.88 36h30.24A2.88 2.88 0 0 0 36 33.12V2.88A2.88 2.88 0 0 0 33.12 0z"/></symbol><symbol viewBox="0 0 30 21" id="menu" xmlns="http://www.w3.org/2000/svg"><path class="jcls-1" d="M30 1.5A1.5 1.5 0 0 0 28.5 0h-27a1.5 1.5 0 0 0 0 3h27A1.5 1.5 0 0 0 30 1.5zM28.5 9h-24a1.5 1.5 0 0 0 0 3h24a1.5 1.5 0 0 0 0-3zm0 9h-21a1.5 1.5 0 0 0 0 3h21a1.5 1.5 0 0 0 0-3z"/></symbol><symbol viewBox="0 0 16 16" id="question" xmlns="http://www.w3.org/2000/svg"><path class="kcls-1" d="M8 16a8 8 0 1 1 8-8 8 8 0 0 1-8 8zM8 1a7 7 0 1 0 7 7 7 7 0 0 0-7-7z"/><path class="kcls-1" d="M8.75 10.85h-1.5v-2.6H8a1.59 1.59 0 0 0 1.27-.62 1.61 1.61 0 0 0 .28-1.42 1.58 1.58 0 0 0-1.1-1.11 1.61 1.61 0 0 0-1.42.28 1.59 1.59 0 0 0-.62 1.27h-1.5a3.08 3.08 0 0 1 1.2-2.45 3.12 3.12 0 0 1 2.71-.54A3.08 3.08 0 0 1 11 5.84a3.12 3.12 0 0 1-.54 2.71 3.08 3.08 0 0 1-1.7 1.11zM7.27 11.72h1.51v1.27H7.27z"/></symbol><symbol viewBox="0 0 79.47 79.46" id="tick" xmlns="http://www.w3.org/2000/svg"><path class="lcls-1" d="M39.74 79.46a39.73 39.73 0 1 1 39.73-39.73 39.78 39.78 0 0 1-39.73 39.73zm0-77.46a37.73 37.73 0 1 0 37.73 37.73A37.78 37.78 0 0 0 39.74 1.99z"/><path class="lcls-1" d="M33.72 58.09L18.2 42.57a1 1 0 0 1 1.41-1.41l14.11 14.11 26-26a1 1 0 0 1 1.41 1.41z"/></symbol><symbol viewBox="0 0 26.2 31.37" id="up" xmlns="http://www.w3.org/2000/svg"><path class="mcls-1" d="M13.1 31.38a1.5 1.5 0 0 1-1.5-1.5V2.13a1.5 1.5 0 0 1 3 0V29.9a1.5 1.5 0 0 1-1.5 1.48z"/><path class="mcls-1" d="M24.7 15.23a1.5 1.5 0 0 1-1.06-.44L13.1 4.25 2.56 14.79a1.5 1.5 0 0 1-2.12-2.12L13.1.01l12.66 12.66a1.5 1.5 0 0 1-1.06 2.56z"/></symbol><symbol viewBox="0 0 50 50" id="user" xmlns="http://www.w3.org/2000/svg"><path class="nst0" d="M25 50C11.2 50 0 38.8 0 25S11.2 0 25 0s25 11.2 25 25-11.2 25-25 25zm0-48C12.3 2 2 12.3 2 25s10.3 23 23 23 23-10.3 23-23S37.7 2 25 2z"/><path class="nst0" d="M25 32.4c-4.9 0-8.9-4-8.9-8.9s4-8.9 8.9-8.9 8.9 4 8.9 8.9-4 8.9-8.9 8.9zm0-15.8c-3.8 0-6.9 3.1-6.9 6.9s3.1 6.9 6.9 6.9 6.9-3.1 6.9-6.9c0-3.8-3.1-6.9-6.9-6.9zM9.8 43.9l-1.3-1.5c9.6-7.9 23.4-7.9 32.9 0L40.1 44c-8.8-7.4-21.5-7.4-30.3-.1z"/></symbol></svg></div>
+      <div class="footer-box">
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-2">
+                <ul class="payment__box">
+                  <li class="payment__item"><img class="payment__img payment__img_visa" src="img/svg/visa_footer.svg" title="Visa" alt="Visa"></li>
+                  <li class="payment__item"><img class="payment__img payment__mastercard" src="img/svg/mastercard_footer.svg" title="MasterCard" alt="MasterCard"></li>
+                  <li class="payment__item"><img class="payment__img payment__img_comodo" src="img/svg/comodo_footer.svg" title="Comodo" alt="Comodo"></li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="footer__list">
+                  <li class="footer__item"><span class="footer__list_title">О компании</span>
+                    <ul class="footer__list_sub">
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./about.html">О нас</a></li>
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./contacts.html">Контакты</a></li>
+                    </ul>
+                  </li>
+                  <li class="footer__item"><span class="footer__list_title">Получить деньги</span>
+                    <ul class="footer__list_sub">
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./how-it-work.html">Как это работает</a></li>
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./how-to-loan.html">Как получить заем</a></li>
+                    </ul>
+                  </li>
+                  <li class="footer__item"><span class="footer__list_title">Помощь</span>
+                    <ul class="footer__list_sub">
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./faq.html">Вопросы и ответы</a></li>
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./feedback.html">Обратная связь</a></li>
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./documents.html">Документы</a></li>
+                    </ul>
+                  </li>
+                  <li class="footer__item"><a class="footer__list_title footer__list_title-anchor" href="./articles.html">Статьи</a>
+                    <ul class="footer__list_sub">
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./document.html">Заем на банковский счет</a></li>
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./document.html">Безопасность онлайн займов</a></li>
+                      <li class="footer__item_sub"><a class="footer__link_sub" href="./document.html">Исправленние кредитной истории</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="crp-box small">© 2017 ООО «MicroDengi»</div>
+            <div class="separator"></div>
+            <div class="seo-box">
+              <p class="seo__text small">Услуги на проекте «Занимало» оказываются юридическим лицом ООО «Телепорт Медиа», которое действует в интересах и по поручению организации ООО Микрокредитная Компания «Берлин». Свидетельство о внесении сведений о юридическом лице в государственный реестр микрофинансовых организаций № 1703045008133, которая на основании ФЗ "О потребительском кредите (займе)" от 21.12.2013 N 353-ФЗ имеет право осуществлять профессиональную деятельность по предоставлению потребительских займов. Проект осуществляет только подбор микрозаймов для клиентов, а именно, между клиентом который желает взять займ, и кредитным учреждением, а также некредитными финансовыми организациями в случаях, определенных федеральными законами об их деятельности, которые занимаются выдачей займов. Проект не является финансовым учреждением, банком или кредитором, и не несёт ответственности за любые заключенные договоры кредитования или условия. Чтобы оформить заявку на получение займа, Вам необходимо пройти регистрацию и аутентификацию на проекте. Ссылка на документы и разрешительную документацию организаций в интересах которых действует юридическое лицо ООО «Гутлид». Чтобы оформить заявку на получение займа, Вам необходимо пройти регистрацию и аутентификацию на проекте. Проект не является финансовым учреждением, банком или кредитором, и не несёт ответственности за любые заключенные договоры кредитования или условия.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+      <script src="libs/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+      <script src="libs/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+      <script src="js/jQuery.animateTransform.js" type="text/javascript"></script>
+      <script src="libs/nouislider/distribute/nouislider.min.js" type="text/javascript"></script>
+      <script src="js/bundle.js" type="text/javascript"></script>
+    </div>
+  </body>
+</html>

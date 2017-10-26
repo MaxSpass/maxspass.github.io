@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="161" height="205" viewBox="0 0 161 205">
+    <defs>
+        <!--<filter id="a" width="200%" height="200%" x="-50%" y="-50%">-->
+            <!--<feMorphology in="SourceGraphic" operator="dilate" result="SvgjsFeMorphology1242Out"/>-->
+            <!--<feOffset in="SvgjsFeMorphology1242Out" result="SvgjsFeOffset1243Out"/>-->
+            <!--<feGaussianBlur in="SvgjsFeOffset1243Out" result="SvgjsFeGaussianBlur1244Out" stdDeviation="15"/>-->
+            <!--<feComposite in="SvgjsFeGaussianBlur1244Out" in2="SourceAlpha" operator="out"-->
+                         <!--result="SvgjsFeComposite1245Out"/>-->
+        <!--</filter>-->
+        <clipPath id="b">
+            <path fill="#fff"
+                  d="M1106 1411.58v133.84c0 3.08-2.24 5.58-5 5.58h-80c-2.76 0-5-2.5-5-5.58v-133.84c0-3.08 2.24-5.58 5-5.58h80c2.76 0 5 2.5 5 5.58z"/>
+        </clipPath>
+        <clipPath id="c">
+            <path fill="#fff" d="M1051.5 1418h19a2.5 2.5 0 0 1 0 5h-19a2.5 2.5 0 0 1 0-5z"/>
+        </clipPath>
+        <clipPath id="d">
+            <path fill="#fff"
+                  d="M1076.57 1419.92a2 2 0 0 1 2.47-1.37l.04.02a2 2 0 0 1 1.37 2.47l-.02.04a2 2 0 0 1-2.47 1.37l-.04-.02a2 2 0 0 1-1.37-2.47z"/>
+        </clipPath>
+        <clipPath id="e">
+            <path fill="#fff" d="M1056 1531h10a4 4 0 1 1 0 8h-10a4 4 0 1 1 0-8z"/>
+        </clipPath>
+    </defs>
+    <path fill="#445a87" fill-opacity=".1"
+          d="M1106 1411.58v133.84c0 3.08-2.24 5.58-5 5.58h-80c-2.76 0-5-2.5-5-5.58v-133.84c0-3.08 2.24-5.58 5-5.58h80c2.76 0 5 2.5 5 5.58z"
+          filter="url(#a)" transform="translate(-980 -1376)"/>
+    <path fill="#fff"
+          d="M126 35.58v133.84c0 3.08-2.24 5.58-5 5.58H41c-2.76 0-5-2.5-5-5.58V35.58C36 32.5 38.24 30 41 30h80c2.76 0 5 2.5 5 5.58z"/>
+    <path fill="#fff"
+          d="M126 35.58v133.84c0 3.08-2.24 5.58-5 5.58H41c-2.76 0-5-2.5-5-5.58V35.58C36 32.5 38.24 30 41 30h80c2.76 0 5 2.5 5 5.58z"/>
+    <path fill="none" stroke="#424c53" stroke-miterlimit="50" stroke-width="10"
+          d="M1106 1411.58v133.84c0 3.08-2.24 5.58-5 5.58h-80c-2.76 0-5-2.5-5-5.58v-133.84c0-3.08 2.24-5.58 5-5.58h80c2.76 0 5 2.5 5 5.58z"
+          clip-path="url(&quot;#b&quot;)" transform="translate(-980 -1376)"/>
+    <path fill="#fff" d="M71.5 42h19a2.5 2.5 0 0 1 0 5h-19a2.5 2.5 0 0 1 0-5z"/>
+    <path fill="none" stroke="#424c53" stroke-miterlimit="50" stroke-width="10"
+          d="M1051.5 1418h19a2.5 2.5 0 0 1 0 5h-19a2.5 2.5 0 0 1 0-5z" clip-path="url(&quot;#c&quot;)"
+          transform="translate(-980 -1376)"/>
+    <path fill="#fff"
+          d="M96.57 43.92a2 2 0 0 1 2.47-1.37l.04.02a2 2 0 0 1 1.37 2.47l-.02.04a2 2 0 0 1-2.47 1.37l-.04-.02a2 2 0 0 1-1.37-2.47z"/>
+    <path fill="none" stroke="#424c53" stroke-miterlimit="50" stroke-width="10"
+          d="M1076.57 1419.92a2 2 0 0 1 2.47-1.37l.04.02a2 2 0 0 1 1.37 2.47l-.02.04a2 2 0 0 1-2.47 1.37l-.04-.02a2 2 0 0 1-1.37-2.47z"
+          clip-path="url(&quot;#d&quot;)" transform="translate(-980 -1376)"/>
+    <path fill="#fff" d="M76 155h10a4 4 0 1 1 0 8H76a4 4 0 1 1 0-8z"/>
+    <path fill="none" stroke="#424c53" stroke-miterlimit="50" stroke-width="10"
+          d="M1056 1531h10a4 4 0 1 1 0 8h-10a4 4 0 1 1 0-8z" clip-path="url(&quot;#e&quot;)"
+          transform="translate(-980 -1376)"/>
+    <path fill="#424c53"
+          d="M151.89 81.75a2.74 2.74 0 0 0-3.8 0 2.52 2.52 0 0 0 0 3.66 24.3 24.3 0 0 1 0 35.16 2.52 2.52 0 0 0 0 3.66 2.7 2.7 0 0 0 1.9.76c.69 0 1.37-.25 1.9-.76a29.34 29.34 0 0 0 0-42.48zm-11.31 5.9a2.76 2.76 0 0 0-3.8 0 2.53 2.53 0 0 0 0 3.67 16.62 16.62 0 0 1 0 24.06 2.53 2.53 0 0 0 0 3.67 2.75 2.75 0 0 0 3.8 0 21.7 21.7 0 0 0 0-31.4zM10.1 81.75a2.75 2.75 0 0 1 3.8 0 2.52 2.52 0 0 1 0 3.66 24.27 24.27 0 0 0 0 35.16 2.52 2.52 0 0 1 0 3.66c-.53.51-1.22.76-1.9.76-.7 0-1.38-.25-1.9-.76a29.32 29.32 0 0 1 0-42.48zm11.32 5.9a2.76 2.76 0 0 1 3.8 0 2.53 2.53 0 0 1 0 3.67 16.59 16.59 0 0 0 0 24.06 2.53 2.53 0 0 1 0 3.67 2.76 2.76 0 0 1-3.8 0 21.65 21.65 0 0 1 0-31.4z"/>
+</svg>
