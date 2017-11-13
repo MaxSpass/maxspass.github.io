@@ -1,0 +1,11 @@
+.articles-container {
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .articles-page .container .articles-container:last-of-type .article-prev {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFydGljbGVzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFpQjtDQUNsQjs7QUFFRDtFQUNFO0lBQ0UsaUJBQWlCO0dBQ2xCO0NBQ0YiLCJmaWxlIjoidHlwaWNhbC9hcnRpY2xlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXJ0aWNsZXMtY29udGFpbmVyIHtcbiAgbWFyZ2luLXRvcDogMzBweDtcbn1cblxuQG1lZGlhIChtaW4td2lkdGg6IDk5MnB4KSB7XG4gIC5hcnRpY2xlcy1wYWdlIC5jb250YWluZXIgLmFydGljbGVzLWNvbnRhaW5lcjpsYXN0LW9mLXR5cGUgLmFydGljbGUtcHJldiB7XG4gICAgbWFyZ2luLWJvdHRvbTogMDtcbiAgfVxufVxuIl19 */
