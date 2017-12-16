@@ -170,106 +170,106 @@
           flex-basis: 100%;
 }
 .shift-1 {
-  margin-left: 2.94117647%;
+  left: 2.94117647%;
 }
 .shift-2 {
-  margin-left: 5.88235294%;
+  left: 5.88235294%;
 }
 .shift-3 {
-  margin-left: 8.82352941%;
+  left: 8.82352941%;
 }
 .shift-4 {
-  margin-left: 11.76470588%;
+  left: 11.76470588%;
 }
 .shift-5 {
-  margin-left: 14.70588235%;
+  left: 14.70588235%;
 }
 .shift-6 {
-  margin-left: 17.64705882%;
+  left: 17.64705882%;
 }
 .shift-7 {
-  margin-left: 20.58823529%;
+  left: 20.58823529%;
 }
 .shift-8 {
-  margin-left: 23.52941176%;
+  left: 23.52941176%;
 }
 .shift-9 {
-  margin-left: 26.47058824%;
+  left: 26.47058824%;
 }
 .shift-10 {
-  margin-left: 29.41176471%;
+  left: 29.41176471%;
 }
 .shift-11 {
-  margin-left: 32.35294118%;
+  left: 32.35294118%;
 }
 .shift-12 {
-  margin-left: 35.29411765%;
+  left: 35.29411765%;
 }
 .shift-13 {
-  margin-left: 38.23529412%;
+  left: 38.23529412%;
 }
 .shift-14 {
-  margin-left: 41.17647059%;
+  left: 41.17647059%;
 }
 .shift-15 {
-  margin-left: 44.11764706%;
+  left: 44.11764706%;
 }
 .shift-16 {
-  margin-left: 47.05882353%;
+  left: 47.05882353%;
 }
 .shift-17 {
-  margin-left: 50%;
+  left: 50%;
 }
 .shift-18 {
-  margin-left: 52.94117647%;
+  left: 52.94117647%;
 }
 .shift-19 {
-  margin-left: 55.88235294%;
+  left: 55.88235294%;
 }
 .shift-20 {
-  margin-left: 58.82352941%;
+  left: 58.82352941%;
 }
 .shift-21 {
-  margin-left: 61.76470588%;
+  left: 61.76470588%;
 }
 .shift-22 {
-  margin-left: 64.70588235%;
+  left: 64.70588235%;
 }
 .shift-23 {
-  margin-left: 67.64705882%;
+  left: 67.64705882%;
 }
 .shift-24 {
-  margin-left: 70.58823529%;
+  left: 70.58823529%;
 }
 .shift-25 {
-  margin-left: 73.52941176%;
+  left: 73.52941176%;
 }
 .shift-26 {
-  margin-left: 76.47058824%;
+  left: 76.47058824%;
 }
 .shift-27 {
-  margin-left: 79.41176471%;
+  left: 79.41176471%;
 }
 .shift-28 {
-  margin-left: 82.35294118%;
+  left: 82.35294118%;
 }
 .shift-29 {
-  margin-left: 85.29411765%;
+  left: 85.29411765%;
 }
 .shift-30 {
-  margin-left: 88.23529412%;
+  left: 88.23529412%;
 }
 .shift-31 {
-  margin-left: 91.17647059%;
+  left: 91.17647059%;
 }
 .shift-32 {
-  margin-left: 94.11764706%;
+  left: 94.11764706%;
 }
 .shift-33 {
-  margin-left: 97.05882353%;
+  left: 97.05882353%;
 }
 .shift-34 {
-  margin-left: 100%;
+  left: 100%;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -489,6 +489,9 @@ body {
   display: flex;
 }
 .modal__graph-reserve {
+  position: absolute;
+  top: 0px;
+  height: 100%;
   padding: 0 5px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
