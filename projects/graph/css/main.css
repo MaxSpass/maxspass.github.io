@@ -1,173 +1,105 @@
 @import "../fonts/Fontello/css/fontello.css";
 .half-1 {
-  -webkit-flex-basis: 2.94117647%;
-      -ms-flex-preferred-size: 2.94117647%;
-          flex-basis: 2.94117647%;
+  width: 2.94117647%;
 }
 .half-2 {
-  -webkit-flex-basis: 5.88235294%;
-      -ms-flex-preferred-size: 5.88235294%;
-          flex-basis: 5.88235294%;
+  width: 5.88235294%;
 }
 .half-3 {
-  -webkit-flex-basis: 8.82352941%;
-      -ms-flex-preferred-size: 8.82352941%;
-          flex-basis: 8.82352941%;
+  width: 8.82352941%;
 }
 .half-4 {
-  -webkit-flex-basis: 11.76470588%;
-      -ms-flex-preferred-size: 11.76470588%;
-          flex-basis: 11.76470588%;
+  width: 11.76470588%;
 }
 .half-5 {
-  -webkit-flex-basis: 14.70588235%;
-      -ms-flex-preferred-size: 14.70588235%;
-          flex-basis: 14.70588235%;
+  width: 14.70588235%;
 }
 .half-6 {
-  -webkit-flex-basis: 17.64705882%;
-      -ms-flex-preferred-size: 17.64705882%;
-          flex-basis: 17.64705882%;
+  width: 17.64705882%;
 }
 .half-7 {
-  -webkit-flex-basis: 20.58823529%;
-      -ms-flex-preferred-size: 20.58823529%;
-          flex-basis: 20.58823529%;
+  width: 20.58823529%;
 }
 .half-8 {
-  -webkit-flex-basis: 23.52941176%;
-      -ms-flex-preferred-size: 23.52941176%;
-          flex-basis: 23.52941176%;
+  width: 23.52941176%;
 }
 .half-9 {
-  -webkit-flex-basis: 26.47058824%;
-      -ms-flex-preferred-size: 26.47058824%;
-          flex-basis: 26.47058824%;
+  width: 26.47058824%;
 }
 .half-10 {
-  -webkit-flex-basis: 29.41176471%;
-      -ms-flex-preferred-size: 29.41176471%;
-          flex-basis: 29.41176471%;
+  width: 29.41176471%;
 }
 .half-11 {
-  -webkit-flex-basis: 32.35294118%;
-      -ms-flex-preferred-size: 32.35294118%;
-          flex-basis: 32.35294118%;
+  width: 32.35294118%;
 }
 .half-12 {
-  -webkit-flex-basis: 35.29411765%;
-      -ms-flex-preferred-size: 35.29411765%;
-          flex-basis: 35.29411765%;
+  width: 35.29411765%;
 }
 .half-13 {
-  -webkit-flex-basis: 38.23529412%;
-      -ms-flex-preferred-size: 38.23529412%;
-          flex-basis: 38.23529412%;
+  width: 38.23529412%;
 }
 .half-14 {
-  -webkit-flex-basis: 41.17647059%;
-      -ms-flex-preferred-size: 41.17647059%;
-          flex-basis: 41.17647059%;
+  width: 41.17647059%;
 }
 .half-15 {
-  -webkit-flex-basis: 44.11764706%;
-      -ms-flex-preferred-size: 44.11764706%;
-          flex-basis: 44.11764706%;
+  width: 44.11764706%;
 }
 .half-16 {
-  -webkit-flex-basis: 47.05882353%;
-      -ms-flex-preferred-size: 47.05882353%;
-          flex-basis: 47.05882353%;
+  width: 47.05882353%;
 }
 .half-17 {
-  -webkit-flex-basis: 50%;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
+  width: 50%;
 }
 .half-18 {
-  -webkit-flex-basis: 52.94117647%;
-      -ms-flex-preferred-size: 52.94117647%;
-          flex-basis: 52.94117647%;
+  width: 52.94117647%;
 }
 .half-19 {
-  -webkit-flex-basis: 55.88235294%;
-      -ms-flex-preferred-size: 55.88235294%;
-          flex-basis: 55.88235294%;
+  width: 55.88235294%;
 }
 .half-20 {
-  -webkit-flex-basis: 58.82352941%;
-      -ms-flex-preferred-size: 58.82352941%;
-          flex-basis: 58.82352941%;
+  width: 58.82352941%;
 }
 .half-21 {
-  -webkit-flex-basis: 61.76470588%;
-      -ms-flex-preferred-size: 61.76470588%;
-          flex-basis: 61.76470588%;
+  width: 61.76470588%;
 }
 .half-22 {
-  -webkit-flex-basis: 64.70588235%;
-      -ms-flex-preferred-size: 64.70588235%;
-          flex-basis: 64.70588235%;
+  width: 64.70588235%;
 }
 .half-23 {
-  -webkit-flex-basis: 67.64705882%;
-      -ms-flex-preferred-size: 67.64705882%;
-          flex-basis: 67.64705882%;
+  width: 67.64705882%;
 }
 .half-24 {
-  -webkit-flex-basis: 70.58823529%;
-      -ms-flex-preferred-size: 70.58823529%;
-          flex-basis: 70.58823529%;
+  width: 70.58823529%;
 }
 .half-25 {
-  -webkit-flex-basis: 73.52941176%;
-      -ms-flex-preferred-size: 73.52941176%;
-          flex-basis: 73.52941176%;
+  width: 73.52941176%;
 }
 .half-26 {
-  -webkit-flex-basis: 76.47058824%;
-      -ms-flex-preferred-size: 76.47058824%;
-          flex-basis: 76.47058824%;
+  width: 76.47058824%;
 }
 .half-27 {
-  -webkit-flex-basis: 79.41176471%;
-      -ms-flex-preferred-size: 79.41176471%;
-          flex-basis: 79.41176471%;
+  width: 79.41176471%;
 }
 .half-28 {
-  -webkit-flex-basis: 82.35294118%;
-      -ms-flex-preferred-size: 82.35294118%;
-          flex-basis: 82.35294118%;
+  width: 82.35294118%;
 }
 .half-29 {
-  -webkit-flex-basis: 85.29411765%;
-      -ms-flex-preferred-size: 85.29411765%;
-          flex-basis: 85.29411765%;
+  width: 85.29411765%;
 }
 .half-30 {
-  -webkit-flex-basis: 88.23529412%;
-      -ms-flex-preferred-size: 88.23529412%;
-          flex-basis: 88.23529412%;
+  width: 88.23529412%;
 }
 .half-31 {
-  -webkit-flex-basis: 91.17647059%;
-      -ms-flex-preferred-size: 91.17647059%;
-          flex-basis: 91.17647059%;
+  width: 91.17647059%;
 }
 .half-32 {
-  -webkit-flex-basis: 94.11764706%;
-      -ms-flex-preferred-size: 94.11764706%;
-          flex-basis: 94.11764706%;
+  width: 94.11764706%;
 }
 .half-33 {
-  -webkit-flex-basis: 97.05882353%;
-      -ms-flex-preferred-size: 97.05882353%;
-          flex-basis: 97.05882353%;
+  width: 97.05882353%;
 }
 .half-34 {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+  width: 100%;
 }
 .shift-1 {
   left: 2.94117647%;
